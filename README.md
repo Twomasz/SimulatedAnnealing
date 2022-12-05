@@ -1,2 +1,2 @@
-# SimulatedAnnealing
+# Simulated Annealing
 Operational research project
