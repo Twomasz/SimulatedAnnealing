@@ -16,16 +16,17 @@ class Item:
     """
     Klasa przechowująca informacje o i-tym przedmiocie w magazynie
     """
-    def __init__(self, name: str, price: float, quantity: int):
+
+    def __init__(self, name: str, price: float):
         self.name = name
         self.price = price
-        self.quantity = quantity
 
 
 class MarketInfo:
     """
     Klasa przechowująca informacje rynkowe o i-tym przedmiocie
     """
+
     def __int__(self):
         self.info = dict()
 
@@ -42,7 +43,6 @@ class Warehouse:
         self.stored_items = stored_items
         self.N = len(self.stored_items)
 
-
     def add_item(self, item: Item):
         self.stored_items.append(item)
         self.N = len(self.stored_items)
@@ -52,12 +52,14 @@ class Company:
     """
     To reprezentacja naszej firmy i czynności, jakie należy wykonać, by dojść do rozwiązania
     """
+
     def __int__(self, K, B, m_manual):
         self.K = K
         self.B = B
         self.m_manual = m_manual
 
-    def get_margins_from_warehouse(self, warehouse: Warehouse, market_info: MarketInfo):  # metoda do obliczania marż wszystkich przedmiotów
+    def get_margins_from_warehouse(self, warehouse: Warehouse,
+                                   market_info: MarketInfo):  # metoda do obliczania marż wszystkich przedmiotów
         items_margins = dict()
 
         info_dict = market_info.info
@@ -75,4 +77,34 @@ class Company:
             items_margins[item.name] = self.m_manual + ingredient1 + ingredient2
 
         return items_margins
+
+
+class Solution:
+    def __init__(self, elems, K, type: str):
+        self.elems = elems
+        self.K = K
+        self.solution = self.__find_solution(type)
+
+    def __find_solution(self, type):
+        if type == 'prob':
+            # random
+        elif type == 'smallest':
+            # najmniejsze
+        elif type == 'greatest':
+            # najwieksze
+        else:
+            raise ValueError('Nieprawidłowy typ znalezienia rozwiązania początkowego')
+
+    def repair_solution(self):
+        pass
+
+    def is_in_budget(self, budget):
+        total_price = 0
+
+        if total_price <= budget:
+            return True
+        else:
+            return False
+
+    # TODO: dodać metody porównania obiektów rozwiązań i przekazanie 75% części do kolejnego obiektu
 
