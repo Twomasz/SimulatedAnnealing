@@ -20,6 +20,7 @@ class Item:
     def __init__(self, name: str, price: float):
         self.name = name
         self.price = price
+        self.margin = None
 
 
 class MarketInfo:
@@ -58,7 +59,7 @@ class Company:
         self.B = B
         self.m_manual = m_manual
 
-    def get_margins_from_warehouse(self, warehouse: Warehouse,
+    def update_margins_from_warehouse(self, warehouse: Warehouse,
                                    market_info: MarketInfo):  # metoda do obliczania marż wszystkich przedmiotów
         items_margins = dict()
 
