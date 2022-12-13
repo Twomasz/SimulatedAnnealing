@@ -80,11 +80,17 @@ class Company:
 
 
 class Solution:
-    def __init__(self, company: Company, stored_items: list, type: str ='prob', type2: str ='1'):
+    def __init__(self, company: Company, stored_items: list, solution=dict(), type: str ='random', type2: str ='random'):
         self.company = company
         self.stored_items = stored_items
-        self.solution = {'indexes': None, 'quantity': None}
-        self.__find_first_solution(type)
+        self.solution = {'indexes': [], 'quantity': []}
+
+        if solution is {}:
+            self.__find_initial_solution(type)
+        elif len(solution) > 0:
+            self.solution = solution
+        else:
+            raise ValueError('Nieprawidłowy typ')
 
     def __gt__(self, other):
         return self.solution > other.solution
@@ -92,11 +98,16 @@ class Solution:
     def __lt__(self, other):
         return self.solution < other.solution
 
-    def __find_first_solution(self, type='prob'):
-        if type == 'prob':
+    def __find_initial_solution(self, type='random'):
+        K = self.company.quantity_of_items_to_sell
+
+        if type == 'random':
             # random
             elems_idx = [i for i in range(len(self.stored_items))]
-            self.solution['indexes'] = random.choices(elems_idx, k=self.company.quantity_of_items_to_sell)
+            self.solution['indexes'] = random.sample(elems_idx, k=K)
+            first_random_idx = self.solution['indexes'][0]
+            Q = self.company.budget // (2*self.stored_items[first_random_idx].price)
+            self.solution['quantity'] = [random.randint(1, Q) for _ in range(K)]
 
         elif type == 'smallest':
             pass
@@ -109,24 +120,46 @@ class Solution:
 
     def repair_solution(self):
         if self.not_in_budget():
-
+            self.solution['quantity'] = [x-1 for x in self.solution['quantity']]
 
             # rekurencja
             self.repair_solution()
 
-    def not_in_budget(self):
-        total_price = 0
+    def __total_price(self):
+        indexes = self.solution['indexes']
+        quantity = self.solution['quantity']
 
-        if total_price > self.company.budget:  # rozwiązanie nie mieści się w budżecie
+        total_price = 0
+        for i in range(self.company.quantity_of_items_to_sell):
+            idx = indexes[i]
+            total_price += self.stored_items[idx].price * quantity[i]
+
+    def not_in_budget(self):
+        if self.__total_price > self.company.budget:  # rozwiązanie nie mieści się w budżecie
             return True
         else:
             return False
 
-    # TODO: dodać metody porównania obiektów rozwiązań i przekazanie 75% części do kolejnego obiektu
+    # TODO: przekazanie 66% części do kolejnego obiektu
 
-    def __find_adjacency_solution(self, type2='1'):
-        if type2 == '1':
-            pass
+    def find_adjacency_solution(self, type2='random'):
+        K = self.company.quantity_of_items_to_sell
+        drop_times = round(K * (2/3))
+
+        if type2 == 'random':
+            same_elems_idx = random.sample([i for i in range(K)], K-drop_times)
+            self.solution['indexes'] = [self.solution['indexes'][i] for i in same_elems_idx]
+            self.solution['quantity'] = [self.solution['quantity'][i] for i in same_elems_idx]
+
+            while len(self.solution['indexes']) < K:
+                new_elem_idx = random.randint(0, K)
+                if new_elem_idx not in self.solution['indexes']:
+                    self.solution['indexes'].append(new_elem_idx)
+
+                    Q = self.company.budget // (2 * self.stored_items[new_elem_idx].price)
+                    self.solution['quantity'].append(random.randint(1, Q))
+
+            self.repair_solution()
 
         elif type2 == '2':
             pass
