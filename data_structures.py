@@ -1,4 +1,5 @@
 import random
+from typing import List
 """
 N = 0       # liczba części dostępnych w magazynie
 K = 0       # liczba wybranych części do sprzedaży
@@ -7,9 +8,8 @@ c_ki = 0    # cena zakupu i-tej części z magazynu
 q_i = 0     # ilość zakupionej i-tej części z magazynu
 c_si = 0    # średnia cena i-tej części wśród konkurencji
 v_i = 0     # ilość aukcji i-tej części na rynku
-m_recz = 0  # ręcznie ustawiana składowa marży przez kierownika
+m_ręczna = 0  # ręcznie ustawiana składowa marży przez kierownika
 """
-
 
 
 class Item:
@@ -26,18 +26,23 @@ class Item:
         self.name = name
         self.price = price
         self.margin = 0
-        self.avg_of_prices = price*price
-        self.quantity_of_other_auctions = 10
-
-    # def update_margin(self, margin):
-    #     self.margin = margin
+        self.quantity = 0   # ilość w aktualnym rozwiązaniu, początkowo zero
+        # self.avg_of_prices = price*price
+        # self.quantity_of_other_auctions = 10
+        self.market_info = {'avg_of_prices': price*price,
+                            'quantity_of_other_auctions': 20,
+                            'demand': 50}
 
     def update_market_info(self, avg_of_prices, quantity_of_other_auctions):
-        self.avg_of_prices = avg_of_prices
-        self.quantity_of_other_auctions = quantity_of_other_auctions
+        self.market_info['avg_of_prices'] = avg_of_prices
+        self.market_info['quantity_of_other_auctions'] = quantity_of_other_auctions
+
+    def get_profit(self):
+        profit = (1+self.margin) * self.price * self.quantity
+        return profit
 
     def __str__(self):
-        return f'{self.name}: {self.price}, ({self.margin:.2f}%)'
+        return f"{self.name}: {self.price}x({self.quantity}+{self.market_info['quantity_of_other_auctions']}), {self.margin:.2f}%"
 
 
 class Warehouse:
@@ -68,29 +73,38 @@ class Company:
 
     def __init__(self, quantity_of_items_to_sell, budget, manual_margin):
         # TODO: zabezpieczenie przed wybraniem K > B
+        # czy posługujemy się nazwami K, B czy lepiej dać dłuższe bardziej opisowe nazwy?
         self.quantity_of_items_to_sell = quantity_of_items_to_sell
         self.budget = budget
         self.m_manual = manual_margin
 
-    def update_margins_from_warehouse(self, warehouse: Warehouse):  # metoda do obliczania marż wszystkich przedmiotów
-        for item in warehouse.stored_items:
-            avg_of_prices, quantity_of_auctions = item.avg_of_prices, item.quantity_of_other_auctions
+    def update_margins_from_warehouse(self, items_in_warehouse):  # metoda do obliczania marż wszystkich przedmiotów
+        for item in items_in_warehouse:
+            market_avg = item.market_info['avg_of_prices']
+            market_quantity = item.market_info['quantity_of_other_auctions']
+            demand = item.market_info['demand']
 
-            item.margin = self.m_manual + (avg_of_prices - item.price) / item.price + quantity_of_auctions / 50
+            # wzór został wytłumaczony w prezentacji
+            item.margin = self.m_manual + (market_avg-item.price)/item.price - (market_quantity+item.quantity)/demand
 
 
 class Solution:
-    def __init__(self, company: Company, stored_items: list, solution=dict(), type: str ='random', type2: str ='random'):
+    def __init__(self, company: Company, stored_items: List[Item], algorithm_type, sol_from_last_object=None,
+                 init_ver: str = 'random'):
+
         self.company = company
         self.stored_items = stored_items
-        self.solution = {'indexes': [], 'quantity': []}
+        self.solution = []   # solution zawiera indeksy wybranych elementów z listy stored_items
 
-        if solution is {}:
-            self.__find_initial_solution(type)
-        elif len(solution) > 0:
-            self.solution = solution
+        if algorithm_type == 'init':
+            self.__find_initial_solution(init_ver)
+        elif algorithm_type == 'adj':
+            if isinstance(sol_from_last_object, list):
+                self.solution = sol_from_last_object
+            else:
+                raise ValueError('cos sie schrzaniło wewnątrz klasy')
         else:
-            raise ValueError('Nieprawidłowy typ')
+            raise ValueError("Nieprawidłowy typ rozwiązania, wpisz 'init' lub 'adj'")
 
     def __gt__(self, other):
         return self.solution > other.solution
@@ -98,75 +112,96 @@ class Solution:
     def __lt__(self, other):
         return self.solution < other.solution
 
-    def __find_initial_solution(self, type='random'):
+    def __repair_solution(self):
+        if self.not_in_budget():
+            # TODO: funkcja kary do zamiany (NA RAZIE ZOSTAWMY, ALE POTEM MOŻEMY UŻYĆ GET_PROFIT DO TEGO)
+            for idx in self.solution:
+                self.stored_items[idx].quantity -= 1
+
+            # po każdej zmianie ilości produktu należy zrobić update jego marży
+            self.company.update_margins_from_warehouse(self.stored_items)
+            # rekurencja
+            self.__repair_solution()
+
+    def not_in_budget(self):
+        if self.total_price() > self.company.budget:  # rozwiązanie nie mieści się w budżecie
+            return True
+        else:
+            return False
+
+    def total_price(self):
+        total_price = 0
+        for idx in self.solution:
+            total_price += self.stored_items[idx].price * self.stored_items[idx].quantity
+        # print(total_price)
+        return total_price
+
+    def __find_initial_solution(self, version='random'):
+        # przed wywołaniem początkowego rozwiązania zaktualizuj marże produktów
+        self.company.update_margins_from_warehouse(self.stored_items)
+
         K = self.company.quantity_of_items_to_sell
 
-        if type == 'random':
+        if version == 'random':
             # random
             elems_idx = [i for i in range(len(self.stored_items))]
-            self.solution['indexes'] = random.sample(elems_idx, k=K)
-            first_random_idx = self.solution['indexes'][0]
-            Q = self.company.budget // (2*self.stored_items[first_random_idx].price)
-            self.solution['quantity'] = [random.randint(1, Q) for _ in range(K)]
+            self.solution = random.sample(elems_idx, k=K)
 
-        elif type == 'smallest':
+            for idx in self.solution:
+                up_limit = self.company.budget // (2 * self.stored_items[idx].price)
+                self.stored_items[idx].quantity = random.randint(1, up_limit)
+
+        elif version == 'smallest':
             pass
             # najmniejsze
-        elif type == 'greatest':
+        elif version == 'greatest':
             pass
             # największe
         else:
             raise ValueError('Nieprawidłowy typ rozwiązania początkowego')
 
-    def repair_solution(self):
-        if self.not_in_budget():
-            self.solution['quantity'] = [x-1 for x in self.solution['quantity']]
+    # TODO: przekazanie PARAMETRU % części do kolejnego obiektu
 
-            # rekurencja
-            self.repair_solution()
+    # TODO: UWAŻAĆ NA STARE ZAPISY W ITEM-ACH BY TO MIAŁO SENS TRZEBA JE W DOBRYM MOMENCIE UPDATE-WAĆ
 
-    def __total_price(self):
-        indexes = self.solution['indexes']
-        quantity = self.solution['quantity']
+    def find_adjacency_solution(self, version='random', drop_coeff=(1/3)):
+        # przed wywołaniem każdego kolejnego rozwiązania zaktualizuj marże produktów
+        self.company.update_margins_from_warehouse(self.stored_items)
 
-        total_price = 0
-        for i in range(self.company.quantity_of_items_to_sell):
-            idx = indexes[i]
-            total_price += self.stored_items[idx].price * quantity[i]
-
-    def not_in_budget(self):
-        if self.__total_price > self.company.budget:  # rozwiązanie nie mieści się w budżecie
-            return True
-        else:
-            return False
-
-    # TODO: przekazanie 66% części do kolejnego obiektu
-
-    def find_adjacency_solution(self, type2='random'):
         K = self.company.quantity_of_items_to_sell
-        drop_times = round(K * (2/3))
+        drop_times = round(K * drop_coeff)
 
-        if type2 == 'random':
-            same_elems_idx = random.sample([i for i in range(K)], K-drop_times)
-            self.solution['indexes'] = [self.solution['indexes'][i] for i in same_elems_idx]
-            self.solution['quantity'] = [self.solution['quantity'][i] for i in same_elems_idx]
+        if version == 'random':
+            old_solution = self.solution
+            # zostawienie części rozwiązania
+            self.solution = random.sample(self.solution, K-drop_times)
 
-            while len(self.solution['indexes']) < K:
-                new_elem_idx = random.randint(0, K)
-                if new_elem_idx not in self.solution['indexes']:
-                    self.solution['indexes'].append(new_elem_idx)
+            # zabezpieczenie zerujące quantity wyrzuconych przedmiotów, możliwe, że okaże się niepotrzebne
+            drop_elems_idx = []
+            for idx in old_solution:
+                if idx not in self.solution:
+                    drop_elems_idx.append(idx)
+            for idx in drop_elems_idx:
+                self.stored_items[idx].quantity = 0
+            # koniec zabezpieczenia
+
+            while len(self.solution) < K:
+                new_elem_idx = random.randint(0, K-1)
+                if new_elem_idx not in self.solution:
+                    self.solution.append(new_elem_idx)
 
                     Q = self.company.budget // (2 * self.stored_items[new_elem_idx].price)
-                    self.solution['quantity'].append(random.randint(1, Q))
+                    self.stored_items[new_elem_idx].quantity = random.randint(1, Q)
 
-            self.repair_solution()
+            self.__repair_solution()
 
-        elif type2 == '2':
+            return Solution(self.company, self.stored_items, algorithm_type='adj', sol_from_last_object=self.solution)
+
+        elif version == '2':
             pass
 
-        elif type2 == '3':
-
-            return Solution(self.company, self.stored_items)
+        elif version == '3':
+            pass
         else:
             raise ValueError('Nieprawidłowy typ definicji sąsiedztwa')
 
