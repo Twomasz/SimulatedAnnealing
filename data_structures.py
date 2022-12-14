@@ -22,13 +22,11 @@ class Item:
     niezależnie
     """
 
-    def __int__(self, name: str, price: float):
+    def __init__(self, name: str, price: float):
         self.name = name
         self.price = price
         self.margin = 0
         self.quantity = 0   # ilość w aktualnym rozwiązaniu, początkowo zero
-        # self.avg_of_prices = price*price
-        # self.quantity_of_other_auctions = 10
         self.market_info = {'avg_of_prices': price*price,
                             'quantity_of_other_auctions': 20,
                             'demand': 50}
@@ -42,6 +40,9 @@ class Item:
         return profit
 
     def __repr__(self):
+        return f"{self.name}: {self.price}x({self.quantity}+{self.market_info['quantity_of_other_auctions']}), {self.margin:.2f}%"
+
+    def __str__(self):
         return f"{self.name}: {self.price}x({self.quantity}+{self.market_info['quantity_of_other_auctions']}), {self.margin:.2f}%"
 
 
