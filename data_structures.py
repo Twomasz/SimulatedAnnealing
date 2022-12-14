@@ -22,7 +22,7 @@ class Item:
     niezależnie
     """
 
-    def __init__(self, name: str, price: float):
+    def __int__(self, name: str, price: float):
         self.name = name
         self.price = price
         self.margin = 0
