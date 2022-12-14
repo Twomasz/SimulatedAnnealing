@@ -47,5 +47,3 @@ def SimulatedAnnealing(company: Company, stored_items: List[Item], T_0, T_f, N_m
 
     return S.total_profit()
 
-
-
