@@ -46,6 +46,7 @@ class Item:
         return f"{self.name}: {self.price}x({self.quantity}+{self.market_info['quantity_of_other_auctions']}), {self.margin:.2f}%"
 
 
+
 class Warehouse:
     """
     Klasa przechowująca informacje o zawartości magazynu

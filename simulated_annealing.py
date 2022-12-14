@@ -44,6 +44,7 @@ def SimulatedAnnealing(company: Company, stored_items: List[Item], T_0, T_f, N_m
         if i >= N_max:
             break
 
+
     return S.total_profit()
 
 
