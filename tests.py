@@ -1,5 +1,5 @@
 from data_structures import *
-
+from simulated_annealing import SimulatedAnnealing
 """
 zwiekszac liczbe iteracji w coraz nizszej temperaturze
 schematy chlodzenia (liniowo, wykladniczo zmieniana) ???
@@ -26,11 +26,18 @@ company.update_margins_from_warehouse(warehouse.stored_items)
 
 print(warehouse)
 
-solution = Solution(company, warehouse.stored_items, algorithm_type='init')
+print(SimulatedAnnealing(company, warehouse.stored_items, 10, 1, 5))
 
+# solution = Solution(company, warehouse.stored_items, solution_type='init')
+#
+#
+#
+# print(solution.solution)
+#
+# print(warehouse)
+#
 # solution2 = solution.find_adjacency_solution()
-
-print(solution.solution)
-company.update_margins_from_warehouse()
-print(warehouse)
-
+#
+# print(solution2.solution)
+#
+# print(warehouse)

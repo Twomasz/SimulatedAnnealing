@@ -38,7 +38,7 @@ class Item:
         self.market_info['quantity_of_other_auctions'] = quantity_of_other_auctions
 
     def get_profit(self):
-        profit = (1+self.margin) * self.price * self.quantity
+        profit = self.margin * self.price * self.quantity
         return profit
 
     def __str__(self):
@@ -89,16 +89,23 @@ class Company:
 
 
 class Solution:
-    def __init__(self, company: Company, stored_items: List[Item], algorithm_type, sol_from_last_object=None,
+    def __init__(self, company: Company, stored_items: List[Item], solution_type, sol_from_last_object=None,
                  init_ver: str = 'random'):
+        """
+        :param company: Klasa przechowująca informacje o firmie
+        :param stored_items: Lista elementów w magazynie
+        :param solution_type: 'init' - rozwiązanie początkowe / 'adj' - rozwiązanie sąsiadujące
+        :param sol_from_last_object: przekazanie listy elementów z poprzedniego rozwiązania
+        :param init_ver: 'random' - losowo wybierane elementy w rozwiązaniu początkowym
+        """
 
         self.company = company
         self.stored_items = stored_items
         self.solution = []   # solution zawiera indeksy wybranych elementów z listy stored_items
 
-        if algorithm_type == 'init':
+        if solution_type == 'init':
             self.__find_initial_solution(init_ver)
-        elif algorithm_type == 'adj':
+        elif solution_type == 'adj':
             if isinstance(sol_from_last_object, list):
                 self.solution = sol_from_last_object
             else:
@@ -114,6 +121,7 @@ class Solution:
 
     def __repair_solution(self):
         if self.not_in_budget():
+            # print(1)
             # TODO: funkcja kary do zamiany (NA RAZIE ZOSTAWMY, ALE POTEM MOŻEMY UŻYĆ GET_PROFIT DO TEGO)
             for idx in self.solution:
                 self.stored_items[idx].quantity -= 1
@@ -137,9 +145,6 @@ class Solution:
         return total_price
 
     def __find_initial_solution(self, version='random'):
-        # przed wywołaniem początkowego rozwiązania zaktualizuj marże produktów
-        self.company.update_margins_from_warehouse(self.stored_items)
-
         K = self.company.quantity_of_items_to_sell
 
         if version == 'random':
@@ -151,16 +156,20 @@ class Solution:
                 up_limit = self.company.budget // (2 * self.stored_items[idx].price)
                 self.stored_items[idx].quantity = random.randint(1, up_limit)
 
+            # gdy nie mieścimy się w budżecie firmy należy zmniejszyć ilość przedmiotów
+            self.__repair_solution()
+            # przed wywołaniem początkowego rozwiązania zaktualizuj marże produktów
+            self.company.update_margins_from_warehouse(self.stored_items)
+
         elif version == 'smallest':
             pass
-            # najmniejsze
+            # TODO: POMYSŁ: wykorzystać item.price lub item.margin i 1/K-tą budżetu
         elif version == 'greatest':
             pass
             # największe
+            # TODO: POMYSŁ: wykorzystać item.price lub item.margin i 1/K-tą budżetu
         else:
             raise ValueError('Nieprawidłowy typ rozwiązania początkowego')
-
-    # TODO: przekazanie PARAMETRU % części do kolejnego obiektu
 
     # TODO: UWAŻAĆ NA STARE ZAPISY W ITEM-ACH BY TO MIAŁO SENS TRZEBA JE W DOBRYM MOMENCIE UPDATE-WAĆ
 
@@ -193,9 +202,12 @@ class Solution:
                     Q = self.company.budget // (2 * self.stored_items[new_elem_idx].price)
                     self.stored_items[new_elem_idx].quantity = random.randint(1, Q)
 
+            # gdy nie mieścimy się w budżecie firmy należy zmniejszyć ilość przedmiotów
             self.__repair_solution()
+            # przed wywołaniem początkowego rozwiązania zaktualizuj marże produktów
+            self.company.update_margins_from_warehouse(self.stored_items)
 
-            return Solution(self.company, self.stored_items, algorithm_type='adj', sol_from_last_object=self.solution)
+            return Solution(self.company, self.stored_items, solution_type='adj', sol_from_last_object=self.solution)
 
         elif version == '2':
             pass
@@ -205,4 +217,11 @@ class Solution:
         else:
             raise ValueError('Nieprawidłowy typ definicji sąsiedztwa')
 
+    def total_profit(self):
+        total_profit = 0
+
+        for idx in self.solution:
+            total_profit += self.stored_items[idx].get_profit()
+
+        return total_profit
 
