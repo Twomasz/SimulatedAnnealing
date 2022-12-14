@@ -28,13 +28,12 @@ def SimulatedAnnealing(company: Company, stored_items: List[Item], T_0, T_f, N_m
 
         S_prim = S.find_adjacency_solution(drop_coeff=0.5)
         print(S_prim.total_profit())
-        S_prim_result, S_result = S_prim.total_profit(), S.total_profit()
 
-        if S_prim_result < S_result:
+        if S_prim < S:
             S = S_prim
 
         else:
-            delta = S_prim_result - S_result
+            delta = S_prim - S
             r = random.uniform(0, 1)
             if r < np.exp(-delta/T):
                 S = S_prim

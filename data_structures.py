@@ -41,7 +41,7 @@ class Item:
         profit = self.margin * self.price * self.quantity
         return profit
 
-    def __str__(self):
+    def __repr__(self):
         return f"{self.name}: {self.price}x({self.quantity}+{self.market_info['quantity_of_other_auctions']}), {self.margin:.2f}%"
 
 
@@ -60,10 +60,7 @@ class Warehouse:
         self.stored_items.append(item)
 
     def __str__(self):
-        string = ''
-        for item in self.stored_items:
-            string += f'{item}' + ', '
-        return string
+        return f'{self.stored_items}'
 
 
 class Company:
@@ -114,10 +111,10 @@ class Solution:
             raise ValueError("Nieprawidłowy typ rozwiązania, wpisz 'init' lub 'adj'")
 
     def __gt__(self, other):
-        return self.solution > other.solution
+        return self.total_profit() > other.total_profit()
 
     def __lt__(self, other):
-        return self.solution < other.solution
+        return self.total_profit() < other.total_profit()
 
     def __repair_solution(self):
         if self.not_in_budget():
