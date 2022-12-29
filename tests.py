@@ -19,7 +19,7 @@ warehouse = Warehouse()
 
 for i in range(df.shape[0]):
     info = df.iloc[i]
-    name = info['Marka'] + ' ' + info['Model'] + ' ' + info['Nazwa części']
+    name = info['Nazwa części']  # info['Marka'] + ' ' + info['Model'] + ' ' +
     item = Item(name, info['Cena zakupu [zł]'])
     item.update_market_info(info['Średnia cena rynkowa'], info['Ilość aukcji na rynku'], info['Popyt'])
 
@@ -37,4 +37,4 @@ company = Company(4, 10000, 0.2)
 temps = [1000, 900, 800, 700, 600]
 iters = [1, 1, 1, 1, 1]
 
-print(SimulatedAnnealing(company, warehouse.stored_items, temps, iters))
+print(SimulatedAnnealing(company, warehouse.stored_items, temps, iters)[:2])

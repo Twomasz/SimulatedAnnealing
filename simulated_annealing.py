@@ -88,9 +88,9 @@ def SimulatedAnnealing(company: Company, stored_items: List[Item], temp_array: l
 
     for idx, curr_temp in enumerate(temp_array):
         for _ in range(iter_array[idx]):
-
-            S_prim = S.find_adjacency_solution(drop_coeff=0.5)  # tworzenie nowego rozwiązania sąsiedniego
-            print(S_prim.profit)
+            # tworzenie nowego rozwiązania sąsiedniego
+            S_prim = Solution(company=company, stored_items=S.stored_items, solution_type='adj', adj_ver='random',
+                              previous_solution=S.solution, drop_coeff=0.5)
 
             # jeżeli S_prim okaże się lepszym rozwiązaniem to staje się nowym rozwiązaniem branym pod uwagę
             if S_prim >= S:
@@ -106,9 +106,11 @@ def SimulatedAnnealing(company: Company, stored_items: List[Item], temp_array: l
                     S = S_prim
 
             # TODO: POMYSŁ: rozdzielić way_of_algorithm na listę list, aby było widać rozpoczęcia kolejnych epok
+            print(S.profit)
             way_of_algorithm.append(S.profit)
 
     result = way_of_algorithm[-1]
-    chosen_items = [stored_items[i] for i in S.solution]
+    S.get_total_profit()
+    chosen_items = [S.stored_items[i] for i in S.solution]
 
     return result, chosen_items, way_of_algorithm

@@ -1,5 +1,6 @@
 import random
 from typing import List
+from copy import deepcopy
 
 
 class Item:
@@ -78,34 +79,46 @@ class Company:
 
 
 class Solution:
-    def __init__(self, company: Company, stored_items: List[Item], solution_type, sol_from_last_object=None,
-                 init_ver: str = 'random'):
+    def __init__(self, company: Company, stored_items: List[Item], solution_type, init_ver: str = 'random',
+                 adj_ver: str = 'random', drop_coeff=(1/3), previous_solution=None):
         """
         @param company: Klasa przechowująca informacje o firmie
         @param stored_items: Lista elementów w magazynie
         @param solution_type: 'init' - rozwiązanie początkowe / 'adj' - rozwiązanie sąsiadujące
-        @param sol_from_last_object: przekazanie listy elementów z poprzedniego rozwiązania
-        @param init_ver: 'random' - losowo wybierane elementy w rozwiązaniu początkowym
+        @param init_ver: wersja rozwiązania początkowego (potrzebna w przypadku solution_type = 'init')
+        @param adj_ver: wersja rozwiązania sąsiadującego (potrzebna w przypadku solution_type = 'adj')
+        @param drop_coeff: Współczynnik wyrzucanej liczby części (potrzebny w przypadku solution_type = 'adj')
+        @param previous_solution: przekazanie listy elementów z poprzedniego rozwiązania
+                (potrzebny w przypadku solution_type = 'adj')
         """
 
         self.company = company
-        self.stored_items = stored_items
+        self.stored_items = deepcopy(stored_items)
         self.N = len(stored_items)                  # ilość elementów w magazynie
         self.K = company.quantity_of_items_to_sell  # ilość elementów do wybrania
         self.solution = []   # solution zawiera indeksy wybranych elementów z listy stored_items
         self.profit = None   # całkowity zysk z wybranego rozwiązania
 
+        # zaktualizuj marże produktom przed znalezieniem rozwiązania
+        self.company.update_margins_from_warehouse(self.stored_items)
+
         if solution_type == 'init':
             self.__find_initial_solution(init_ver)
-            self.profit = self.__get_total_profit()  # aktualizacja zysku po wybraniu rozwiązania
+
         elif solution_type == 'adj':
-            if isinstance(sol_from_last_object, list):
-                self.solution = sol_from_last_object
-                self.profit = self.__get_total_profit()  # aktualizacja zysku po wybraniu rozwiązania
+            if isinstance(previous_solution, list):
+                self.solution = deepcopy(previous_solution)
+                self.__find_adjacency_solution(adj_ver, drop_coeff)
+
             else:
-                raise ValueError('cos sie schrzaniło wewnątrz klasy')
+                raise ValueError('Poprzednie rozwiązanie nie jest listą!')
         else:
             raise ValueError("Nieprawidłowy typ rozwiązania, wpisz 'init' lub 'adj'")
+
+        # po znalezieniu rozwiązania należy sprawdzić jego poprawność
+        self.__repair_solution()
+        # a następnie zaktualizować zysk ze znalezionego
+        self.profit = self.get_total_profit()
 
     def __ge__(self, other):
         return self.profit >= other.profit
@@ -141,10 +154,7 @@ class Solution:
 
         return total_price
 
-    def __get_total_profit(self):
-        # zabezpieczenie by profit miał zawsze aktualną wartość
-        self.company.update_margins_from_warehouse(self.stored_items)
-
+    def get_total_profit(self):
         total_profit = 0
         for idx in self.solution:
             total_profit += self.stored_items[idx].get_profit()
@@ -163,9 +173,6 @@ class Solution:
 
         if version not in ['random', 'greatest', 'uncommon']:   # zabezpieczenie
             raise ValueError('Nieprawidłowy typ rozwiązania początkowego')
-
-        # nadaj marże produktom, przed wprowadzaniem swojej ilości części na rynek
-        self.company.update_margins_from_warehouse(self.stored_items)
 
         if version == 'random':
             # random
@@ -199,12 +206,9 @@ class Solution:
                 quantity = part_of_budget // self.stored_items[idx].price
                 self.stored_items[idx].quantity = quantity
 
-        # na koniec, w przypadku gdy nie mieścimy się w budżecie firmy należy zmniejszyć ilość przedmiotów
-        self.__repair_solution()
-
     # TODO: UWAŻAĆ NA STARE ZAPISY W ITEM-ACH BY TO MIAŁO SENS TRZEBA JE W DOBRYM MOMENCIE UPDATE-WAĆ
 
-    def find_adjacency_solution(self, version: str = 'random', drop_coeff=(1/3)):
+    def __find_adjacency_solution(self, version: str = 'random', drop_coeff=(1 / 3)):
         """
         Metoda do znajdowania rozwiązania sąsiedniego do tego obecnego. Zawiera 3 warianty definicji sąsiedztwa
         @param version: Parametr decydujący o wyborze wariantu sąsiedztwa:
@@ -215,11 +219,8 @@ class Solution:
                 rozwiązania
         @return: Metoda zwraca nowy obiekt Solution, mający wspólny ułamek części z bieżącym rozwiązaniem
         """
-        # przed wywołaniem każdego kolejnego rozwiązania zaktualizuj marże produktów
-        self.company.update_margins_from_warehouse(self.stored_items)
 
         drop_times = round(self.K * drop_coeff)
-
         new_solution = self.solution
 
         if version == 'random':
@@ -245,10 +246,8 @@ class Solution:
 
         elif version == '3':
             pass
+
         else:
             raise ValueError('Nieprawidłowy typ definicji sąsiedztwa')
 
-        # po znalezieniu rozwiązania należy sprawdzić jego poprawność
-        self.__repair_solution()
-
-        return Solution(self.company, self.stored_items, solution_type='adj', sol_from_last_object=new_solution)
+        self.solution = new_solution
