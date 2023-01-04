@@ -30,12 +30,11 @@ class Item:
         return profit
 
     def __repr__(self):
-        return f"{self.name}: {self.price}x({self.quantity}+{self.market_info['quantity_of_other_auctions']}), " \
+        return f"{self.name}: ({self.quantity}+{self.market_info['quantity_of_other_auctions']})x{self.price}zł, " \
                f"{self.margin * 100:.2f}%"
 
     def __str__(self):
-        return f"{self.name}: {self.price}x({self.quantity}+{self.market_info['quantity_of_other_auctions']}), " \
-               f"{self.margin * 100:.2f}%"
+        return f"{self.name}: \n {int(self.quantity)}x{self.price}zł, {self.margin * 100:.2f}%"
 
 
 class Warehouse:
@@ -132,8 +131,15 @@ class Solution:
     def __repair_solution(self):
         if self.not_in_budget():
             # TODO: funkcja kary do zamiany (NA RAZIE ZOSTAWMY, ALE POTEM MOŻEMY UŻYĆ GET_PROFIT DO TEGO)
+            # worst_item = self.stored_items[self.solution[0]]
+            # for idx in self.solution:
+            #     if self.stored_items[idx].get_profit() < worst_item.get_profit():
+            #         worst_item = self.stored_items[idx]
+            #
+            # worst_item.quantity -= 1
+
             for idx in self.solution:
-                if self.stored_items[idx].quantity > 0:  # zabezpieczenie przed ujemną ilością
+                if self.stored_items[idx].quantity > 1:  # zabezpieczenie przed ujemną ilością
                     self.stored_items[idx].quantity -= 1
 
             # po każdej zmianie ilości produktu należy zrobić update jego marży
@@ -176,7 +182,7 @@ class Solution:
 
         if version == 'random':
             # random
-            elems_idx = [i for i in range(self.N)]
+            elems_idx = list(range(self.N))
             self.solution = random.sample(elems_idx, k=self.K)
 
             for idx in self.solution:
@@ -206,32 +212,29 @@ class Solution:
                 quantity = part_of_budget // self.stored_items[idx].price
                 self.stored_items[idx].quantity = quantity
 
-    # TODO: UWAŻAĆ NA STARE ZAPISY W ITEM-ACH BY TO MIAŁO SENS TRZEBA JE W DOBRYM MOMENCIE UPDATE-WAĆ
-
-    def __find_adjacency_solution(self, version: str = 'random', drop_coeff=(1 / 3)):
+    def __find_adjacency_solution(self, version: str = 'random', drop_coeff=(1/3)):
         """
         Metoda do znajdowania rozwiązania sąsiedniego do tego obecnego. Zawiera 3 warianty definicji sąsiedztwa
         @param version: Parametr decydujący o wyborze wariantu sąsiedztwa:
                 'random': wybór części, jak i ich ilości jest dobierany w sposób losowy
-                '2':
-                '3':
+                'margins': wybór części mających najwyższą marżę, ilość dobierana w sposób losowy
+                'profit': wybór części dające największy zysk przy częściowo losowej ilości
         @param drop_coeff: Liczba z przedziału (0, 1) mówiąca o tym, ile procent części należy wyrzucić z nowego
                 rozwiązania
         @return: Metoda zwraca nowy obiekt Solution, mający wspólny ułamek części z bieżącym rozwiązaniem
         """
 
         drop_times = round(self.K * drop_coeff)
-        new_solution = self.solution
+        new_solution = deepcopy(self.solution)
 
         if version == 'random':
             # zostawienie części rozwiązania
-            new_solution = random.sample(self.solution, self.K - drop_times)
+            new_solution = random.sample(new_solution, self.K - drop_times)
 
-            # zabezpieczenie zerujące quantity wyrzuconych przedmiotów, możliwe, że okaże się niepotrzebne
+            # zabezpieczenie zerujące quantity wyrzuconych przedmiotów
             for idx in range(self.N):
                 if idx not in new_solution:
                     self.stored_items[idx].quantity = 0
-            # koniec zabezpieczenia
 
             while len(new_solution) < self.K:
                 new_elem_idx = random.randint(0, self.N-1)
@@ -241,11 +244,67 @@ class Solution:
                     q = self.company.budget // (2 * self.stored_items[new_elem_idx].price)
                     self.stored_items[new_elem_idx].quantity = random.randint(1, q)
 
-        elif version == '2':
-            pass
+        elif version == 'margins':
+            # sortowanie elementów od tych dających największą marżę
+            new_solution.sort(key=lambda x: self.stored_items[x].margin, reverse=True)
+            # wyrzucenie z rozwiązania 1/n-tej elementów dających najgorszą marżę
+            new_solution = new_solution[:(self.K - drop_times)]
 
-        elif version == '3':
-            pass
+            # nadanie wszystkim elementom poza rozwiązaniem losowej ilości, aby zasymulować zachowanie rynku po
+            # wprowadzeniu swojej ilości elementów
+            for idx, item in enumerate(self.stored_items):
+                if idx not in new_solution:
+                    up_limit = self.company.budget // (2 * self.stored_items[idx].price)
+                    item.quantity = random.randint(1, up_limit)
+
+            self.company.update_margins_from_warehouse(self.stored_items)  # UPDATE!
+
+            # posortowanie elementów według marży przy wprowadzeniu swojej ilości na rynek
+            indexes = list(range(self.N))
+            sorted_idx = sorted(indexes, key=lambda x: self.stored_items[x].margin, reverse=True)
+
+            # dodanie elementów do rozwiązania tak, aby zapełnić ilość K
+            n = 0
+            while len(new_solution) < self.K:
+                if sorted_idx[n] not in new_solution:
+                    new_solution.append(sorted_idx[n])
+                n += 1
+
+            # zresetowanie ilości pozostałym produktom
+            for idx in range(self.N):
+                if idx not in new_solution:
+                    self.stored_items[idx].quantity = 0
+
+        elif version == 'profit':
+            # sortowanie elementów od tych dających największy zysk
+            new_solution.sort(key=lambda x: self.stored_items[x].get_profit(), reverse=True)
+            # wyrzucenie z rozwiązania 1/n-tej elementów dających najgorszy zysk
+            new_solution = new_solution[:(self.K - drop_times)]
+
+            # nadanie wszystkim elementom poza rozwiązaniem losowej ilości, aby zasymulować zachowanie rynku po
+            # wprowadzeniu swojej ilości elementów
+            for idx, item in enumerate(self.stored_items):
+                if idx not in new_solution:
+                    up_limit = self.company.budget // (2 * self.stored_items[idx].price)
+                    item.quantity = random.randint(1, up_limit)
+
+            self.company.update_margins_from_warehouse(self.stored_items)  # UPDATE!
+
+            # posortowanie elementów według przynoszącego zysku przy wprowadzeniu swojej ilości na rynek
+            indexes = list(range(self.N))
+            sorted_idx = sorted(indexes, key=lambda x: self.stored_items[x].get_profit(), reverse=True)
+
+            # dodanie elementów do rozwiązania tak, aby zapełnić ilość K
+            n = 0
+            while len(new_solution) < self.K:
+                if sorted_idx[n] not in new_solution:
+                    new_solution.append(sorted_idx[n])
+                n += 1
+
+            # zresetowanie ilości pozostałym produktom
+            for idx in range(self.N):
+                if idx not in new_solution:
+                    self.stored_items[idx].quantity = 0
 
         else:
             raise ValueError('Nieprawidłowy typ definicji sąsiedztwa')

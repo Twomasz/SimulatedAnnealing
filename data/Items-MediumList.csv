@@ -1,0 +1,101 @@
+Marka,Model,Nazwa części,Cena zakupu [zł],Średnia cena rynkowa,Ilość aukcji na rynku,Popyt
+BMW,e46,Wahacz przedni,488,512,310,690
+AUDI,A6,Wahacz przedni,542,570,326,590
+Volksvagen,Golf 7,Wahacz przedni,416,439,293,550
+Opel,Insignia,Wahacz przedni,481,494,319,510
+Skoda,Fabia,Wahacz przedni,252,272,335,290
+Mazda,mx5,Wahacz przedni,388,417,323,280
+Toyota,Corolla,Wahacz przedni,433,444,319,310
+Fiat,Panda,Wahacz przedni,226,255,286,780
+Alfa Romeo,Gulia,Wahacz przedni,563,573,385,510
+Chevrolet,Camaro,Wahacz przedni,271,301,314,520
+BMW,e46,Amortyzator tylni,484,513,256,310
+AUDI,A6,Amortyzator tylni,457,478,327,340
+Volksvagen,Golf 7,Amortyzator tylni,383,404,310,750
+Opel,Insignia,Amortyzator tylni,300,330,313,770
+Skoda,Fabia,Amortyzator tylni,392,409,363,440
+Mazda,mx5,Amortyzator tylni,338,364,262,660
+Toyota,Corolla,Amortyzator tylni,414,446,321,260
+Fiat,Panda,Amortyzator tylni,407,440,305,510
+Alfa Romeo,Gulia,Amortyzator tylni,369,385,329,540
+Chevrolet,Camaro,Amortyzator tylni,333,340,271,780
+BMW,e46,Klocki hamulcowe,77,96,412,860
+AUDI,A6,Klocki hamulcowe,143,158,720,1070
+Volksvagen,Golf 7,Klocki hamulcowe,118,127,736,400
+Opel,Insignia,Klocki hamulcowe,103,117,719,440
+Skoda,Fabia,Klocki hamulcowe,169,178,486,700
+Mazda,mx5,Klocki hamulcowe,78,93,452,790
+Toyota,Corolla,Klocki hamulcowe,74,79,478,1050
+Fiat,Panda,Klocki hamulcowe,102,119,416,540
+Alfa Romeo,Gulia,Klocki hamulcowe,164,176,590,590
+Chevrolet,Camaro,Klocki hamulcowe,64,73,486,890
+BMW,e46,Maglownica,361,373,170,310
+AUDI,A6,Maglownica,326,348,258,170
+Volksvagen,Golf 7,Maglownica,470,484,150,340
+Opel,Insignia,Maglownica,228,263,285,200
+Skoda,Fabia,Maglownica,464,480,128,370
+Mazda,mx5,Maglownica,258,289,110,140
+Toyota,Corolla,Maglownica,464,501,154,110
+Fiat,Panda,Maglownica,474,502,274,140
+Alfa Romeo,Gulia,Maglownica,238,271,232,310
+Chevrolet,Camaro,Maglownica,334,360,173,380
+BMW,e46,Sprzęgło dwumasowe,478,513,324,440
+AUDI,A6,Sprzęgło dwumasowe,310,339,248,240
+Volksvagen,Golf 7,Sprzęgło dwumasowe,689,714,364,330
+Opel,Insignia,Sprzęgło dwumasowe,363,386,500,260
+Skoda,Fabia,Sprzęgło dwumasowe,391,441,354,500
+Mazda,mx5,Sprzęgło dwumasowe,526,555,404,300
+Toyota,Corolla,Sprzęgło dwumasowe,596,636,333,340
+Fiat,Panda,Sprzęgło dwumasowe,548,573,410,280
+Alfa Romeo,Gulia,Sprzęgło dwumasowe,391,437,496,350
+Chevrolet,Camaro,Sprzęgło dwumasowe,413,425,215,440
+BMW,e46,Wtrysk bezpośredni paliwa,284,308,691,780
+AUDI,A6,Wtrysk bezpośredni paliwa,199,214,509,750
+Volksvagen,Golf 7,Wtrysk bezpośredni paliwa,164,190,507,590
+Opel,Insignia,Wtrysk bezpośredni paliwa,245,268,620,720
+Skoda,Fabia,Wtrysk bezpośredni paliwa,106,120,822,1000
+Mazda,mx5,Wtrysk bezpośredni paliwa,202,223,777,880
+Toyota,Corolla,Wtrysk bezpośredni paliwa,106,127,1194,820
+Fiat,Panda,Wtrysk bezpośredni paliwa,108,143,947,540
+Alfa Romeo,Gulia,Wtrysk bezpośredni paliwa,283,305,743,1460
+Chevrolet,Camaro,Wtrysk bezpośredni paliwa,212,237,414,1300
+BMW,e46,Tarcza hamulcowa,160,180,562,780
+AUDI,A6,Tarcza hamulcowa,115,147,708,700
+Volksvagen,Golf 7,Tarcza hamulcowa,181,210,610,850
+Opel,Insignia,Tarcza hamulcowa,174,206,569,660
+Skoda,Fabia,Tarcza hamulcowa,113,144,790,750
+Mazda,mx5,Tarcza hamulcowa,146,173,696,780
+Toyota,Corolla,Tarcza hamulcowa,189,219,618,790
+Fiat,Panda,Tarcza hamulcowa,145,159,766,780
+Alfa Romeo,Gulia,Tarcza hamulcowa,142,161,556,690
+Chevrolet,Camaro,Tarcza hamulcowa,76,98,790,900
+BMW,e46,Sprężyna przednia,244,279,681,830
+AUDI,A6,Sprężyna przednia,225,252,692,900
+Volksvagen,Golf 7,Sprężyna przednia,79,91,574,490
+Opel,Insignia,Sprężyna przednia,214,245,635,580
+Skoda,Fabia,Sprężyna przednia,231,263,537,660
+Mazda,mx5,Sprężyna przednia,115,147,759,600
+Toyota,Corolla,Sprężyna przednia,179,203,605,780
+Fiat,Panda,Sprężyna przednia,173,223,789,810
+Alfa Romeo,Gulia,Sprężyna przednia,196,215,662,830
+Chevrolet,Camaro,Sprężyna przednia,83,103,501,800
+BMW,e46,Filtr oleju,56,66,1089,1380
+AUDI,A6,Filtr oleju,32,52,1064,1900
+Volksvagen,Golf 7,Filtr oleju,63,71,1265,1530
+Opel,Insignia,Filtr oleju,51,66,1264,1740
+Skoda,Fabia,Filtr oleju,54,69,1452,1350
+Mazda,mx5,Filtr oleju,38,49,1038,1570
+Toyota,Corolla,Filtr oleju,59,69,1282,1420
+Fiat,Panda,Filtr oleju,57,71,1430,1190
+Alfa Romeo,Gulia,Filtr oleju,57,65,1390,1350
+Chevrolet,Camaro,Filtr oleju,82,92,1015,1370
+BMW,e46,Chłodnica,1722,1891,45,40
+AUDI,A6,Chłodnica,1079,1200,37,20
+Volksvagen,Golf 7,Chłodnica,1549,1748,25,30
+Opel,Insignia,Chłodnica,1566,1727,37,40
+Skoda,Fabia,Chłodnica,1191,1267,42,20
+Mazda,mx5,Chłodnica,1410,1495,26,50
+Toyota,Corolla,Chłodnica,1834,1921,40,30
+Fiat,Panda,Chłodnica,1288,1427,29,40
+Alfa Romeo,Gulia,Chłodnica,1421,1503,14,50
+Chevrolet,Camaro,Chłodnica,1518,1695,28,40

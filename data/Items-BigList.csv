@@ -1,0 +1,1001 @@
+Marka,Model,Nazwa części,Cena zakupu [zł],Średnia cena rynkowa,Ilość aukcji na rynku,Popyt
+BMW,E46,Wahacz przedni,303,328,354,370
+BMW,E46,Amortyzator tylni,426,433,298,460
+BMW,E46,Klocki hamulcowe,97,102,473,420
+BMW,E46,Maglownica,340,387,256,240
+BMW,E46,Sprzęgło dwumasowe,422,450,203,450
+BMW,E46,Wtrysk bezpośredni paliwa,211,226,804,540
+BMW,E46,Tarcza hamulcowa,151,170,657,790
+BMW,E46,Sprężyna przednia,230,247,717,450
+BMW,E46,Filtr oleju,81,93,1406,1910
+BMW,E46,Chłodnica,1833,1945,46,50
+BMW,X6,Wahacz przedni,462,479,385,530
+BMW,X6,Amortyzator tylni,478,497,386,610
+BMW,X6,Klocki hamulcowe,171,190,538,1000
+BMW,X6,Maglownica,323,340,138,370
+BMW,X6,Sprzęgło dwumasowe,404,420,279,500
+BMW,X6,Wtrysk bezpośredni paliwa,201,234,856,1240
+BMW,X6,Tarcza hamulcowa,98,127,751,810
+BMW,X6,Sprężyna przednia,189,209,568,660
+BMW,X6,Filtr oleju,80,86,1031,1480
+BMW,X6,Chłodnica,1093,1248,29,40
+BMW,E60,Wahacz przedni,202,213,255,430
+BMW,E60,Amortyzator tylni,445,473,327,530
+BMW,E60,Klocki hamulcowe,131,151,483,1040
+BMW,E60,Maglownica,499,531,244,100
+BMW,E60,Sprzęgło dwumasowe,431,452,364,210
+BMW,E60,Wtrysk bezpośredni paliwa,124,157,1174,640
+BMW,E60,Tarcza hamulcowa,185,198,755,670
+BMW,E60,Sprężyna przednia,116,143,549,850
+BMW,E60,Filtr oleju,72,83,1434,1110
+BMW,E60,Chłodnica,1750,1883,46,30
+BMW,F30,Wahacz przedni,580,594,252,470
+BMW,F30,Amortyzator tylni,444,469,392,380
+BMW,F30,Klocki hamulcowe,113,130,661,550
+BMW,F30,Maglownica,282,312,227,180
+BMW,F30,Sprzęgło dwumasowe,692,708,493,330
+BMW,F30,Wtrysk bezpośredni paliwa,195,213,494,550
+BMW,F30,Tarcza hamulcowa,147,178,691,650
+BMW,F30,Sprężyna przednia,238,279,573,540
+BMW,F30,Filtr oleju,38,56,1459,1230
+BMW,F30,Chłodnica,1378,1543,49,40
+BMW,Z4,Wahacz przedni,429,441,349,350
+BMW,Z4,Amortyzator tylni,336,342,275,460
+BMW,Z4,Klocki hamulcowe,127,135,781,1180
+BMW,Z4,Maglownica,474,505,161,370
+BMW,Z4,Sprzęgło dwumasowe,682,693,470,230
+BMW,Z4,Wtrysk bezpośredni paliwa,141,166,1011,1350
+BMW,Z4,Tarcza hamulcowa,80,96,675,720
+BMW,Z4,Sprężyna przednia,148,180,764,850
+BMW,Z4,Filtr oleju,65,71,1457,1560
+BMW,Z4,Chłodnica,1475,1591,17,40
+BMW,E39,Wahacz przedni,571,597,373,280
+BMW,E39,Amortyzator tylni,426,452,363,390
+BMW,E39,Klocki hamulcowe,65,80,521,810
+BMW,E39,Maglownica,311,327,263,280
+BMW,E39,Sprzęgło dwumasowe,384,425,470,320
+BMW,E39,Wtrysk bezpośredni paliwa,119,149,805,900
+BMW,E39,Tarcza hamulcowa,80,105,756,740
+BMW,E39,Sprężyna przednia,78,122,702,450
+BMW,E39,Filtr oleju,61,71,1033,1850
+BMW,E39,Chłodnica,1550,1739,9,40
+BMW,G20,Wahacz przedni,533,551,378,520
+BMW,G20,Amortyzator tylni,373,402,286,560
+BMW,G20,Klocki hamulcowe,191,200,508,1020
+BMW,G20,Maglownica,250,276,188,330
+BMW,G20,Sprzęgło dwumasowe,552,566,452,310
+BMW,G20,Wtrysk bezpośredni paliwa,265,288,1095,1290
+BMW,G20,Tarcza hamulcowa,155,174,689,830
+BMW,G20,Sprężyna przednia,110,143,695,750
+BMW,G20,Filtr oleju,51,70,1230,1480
+BMW,G20,Chłodnica,1589,1694,38,30
+BMW,X1,Wahacz przedni,387,407,338,300
+BMW,X1,Amortyzator tylni,366,397,271,560
+BMW,X1,Klocki hamulcowe,178,196,472,680
+BMW,X1,Maglownica,304,328,124,220
+BMW,X1,Sprzęgło dwumasowe,667,714,236,400
+BMW,X1,Wtrysk bezpośredni paliwa,253,274,1107,840
+BMW,X1,Tarcza hamulcowa,156,185,695,710
+BMW,X1,Sprężyna przednia,182,195,549,600
+BMW,X1,Filtr oleju,39,45,1042,1510
+BMW,X1,Chłodnica,1987,2168,17,30
+BMW,X2,Wahacz przedni,353,382,274,540
+BMW,X2,Amortyzator tylni,465,485,345,360
+BMW,X2,Klocki hamulcowe,105,114,686,1070
+BMW,X2,Maglownica,468,502,166,340
+BMW,X2,Sprzęgło dwumasowe,584,603,258,420
+BMW,X2,Wtrysk bezpośredni paliwa,296,323,1156,580
+BMW,X2,Tarcza hamulcowa,155,165,697,720
+BMW,X2,Sprężyna przednia,224,237,575,520
+BMW,X2,Filtr oleju,74,91,1106,1010
+BMW,X2,Chłodnica,1234,1309,15,50
+BMW,E36,Wahacz przedni,476,501,301,510
+BMW,E36,Amortyzator tylni,334,352,291,300
+BMW,E36,Klocki hamulcowe,136,151,452,510
+BMW,E36,Maglownica,476,494,279,330
+BMW,E36,Sprzęgło dwumasowe,419,455,328,470
+BMW,E36,Wtrysk bezpośredni paliwa,197,211,977,1090
+BMW,E36,Tarcza hamulcowa,81,91,658,880
+BMW,E36,Sprężyna przednia,77,124,800,740
+BMW,E36,Filtr oleju,90,104,1058,1910
+BMW,E36,Chłodnica,1251,1368,40,30
+AUDI,A1,Wahacz przedni,576,589,312,760
+AUDI,A1,Amortyzator tylni,320,348,273,740
+AUDI,A1,Klocki hamulcowe,120,125,619,630
+AUDI,A1,Maglownica,474,509,171,220
+AUDI,A1,Sprzęgło dwumasowe,341,352,429,430
+AUDI,A1,Wtrysk bezpośredni paliwa,245,280,1006,1410
+AUDI,A1,Tarcza hamulcowa,167,183,536,610
+AUDI,A1,Sprężyna przednia,250,281,741,460
+AUDI,A1,Filtr oleju,69,77,1054,1500
+AUDI,A1,Chłodnica,1837,1970,7,50
+AUDI,Q3,Wahacz przedni,316,341,339,720
+AUDI,Q3,Amortyzator tylni,434,467,271,730
+AUDI,Q3,Klocki hamulcowe,190,203,667,810
+AUDI,Q3,Maglownica,260,309,121,150
+AUDI,Q3,Sprzęgło dwumasowe,598,608,201,320
+AUDI,Q3,Wtrysk bezpośredni paliwa,140,151,987,1120
+AUDI,Q3,Tarcza hamulcowa,145,158,789,740
+AUDI,Q3,Sprężyna przednia,136,176,526,430
+AUDI,Q3,Filtr oleju,42,62,1008,1800
+AUDI,Q3,Chłodnica,1116,1184,14,20
+AUDI,TT,Wahacz przedni,442,467,353,590
+AUDI,TT,Amortyzator tylni,482,513,343,660
+AUDI,TT,Klocki hamulcowe,120,134,407,660
+AUDI,TT,Maglownica,405,439,134,200
+AUDI,TT,Sprzęgło dwumasowe,480,490,395,470
+AUDI,TT,Wtrysk bezpośredni paliwa,298,322,681,1150
+AUDI,TT,Tarcza hamulcowa,116,127,649,840
+AUDI,TT,Sprężyna przednia,229,244,738,840
+AUDI,TT,Filtr oleju,31,40,1476,1530
+AUDI,TT,Chłodnica,1528,1618,25,50
+AUDI,R8,Wahacz przedni,545,556,313,560
+AUDI,R8,Amortyzator tylni,472,496,255,740
+AUDI,R8,Klocki hamulcowe,51,66,466,950
+AUDI,R8,Maglownica,347,373,109,100
+AUDI,R8,Sprzęgło dwumasowe,396,440,254,390
+AUDI,R8,Wtrysk bezpośredni paliwa,217,246,1000,1420
+AUDI,R8,Tarcza hamulcowa,179,198,572,840
+AUDI,R8,Sprężyna przednia,77,123,577,420
+AUDI,R8,Filtr oleju,66,75,1195,1450
+AUDI,R8,Chłodnica,1049,1197,28,50
+AUDI,A6,Wahacz przedni,206,232,253,680
+AUDI,A6,Amortyzator tylni,446,473,251,670
+AUDI,A6,Klocki hamulcowe,67,86,460,690
+AUDI,A6,Maglownica,325,356,292,240
+AUDI,A6,Sprzęgło dwumasowe,638,650,411,330
+AUDI,A6,Wtrysk bezpośredni paliwa,235,254,644,1250
+AUDI,A6,Tarcza hamulcowa,142,156,769,880
+AUDI,A6,Sprężyna przednia,102,122,782,570
+AUDI,A6,Filtr oleju,51,60,1167,1490
+AUDI,A6,Chłodnica,1510,1705,18,20
+AUDI,Q7,Wahacz przedni,209,221,337,290
+AUDI,Q7,Amortyzator tylni,322,338,312,610
+AUDI,Q7,Klocki hamulcowe,125,142,613,760
+AUDI,Q7,Maglownica,475,499,131,230
+AUDI,Q7,Sprzęgło dwumasowe,491,507,240,330
+AUDI,Q7,Wtrysk bezpośredni paliwa,195,225,511,1020
+AUDI,Q7,Tarcza hamulcowa,123,154,760,770
+AUDI,Q7,Sprężyna przednia,137,165,587,800
+AUDI,Q7,Filtr oleju,81,89,1214,1720
+AUDI,Q7,Chłodnica,1341,1508,37,50
+AUDI,A3,Wahacz przedni,290,300,379,550
+AUDI,A3,Amortyzator tylni,464,498,299,260
+AUDI,A3,Klocki hamulcowe,173,184,592,1120
+AUDI,A3,Maglownica,419,453,187,190
+AUDI,A3,Sprzęgło dwumasowe,645,694,406,350
+AUDI,A3,Wtrysk bezpośredni paliwa,169,203,1091,930
+AUDI,A3,Tarcza hamulcowa,100,118,713,880
+AUDI,A3,Sprężyna przednia,202,231,644,890
+AUDI,A3,Filtr oleju,80,86,1250,1300
+AUDI,A3,Chłodnica,1639,1723,39,20
+AUDI,80,Wahacz przedni,429,454,263,310
+AUDI,80,Amortyzator tylni,428,434,321,590
+AUDI,80,Klocki hamulcowe,108,128,400,590
+AUDI,80,Maglownica,334,345,221,330
+AUDI,80,Sprzęgło dwumasowe,459,498,361,460
+AUDI,80,Wtrysk bezpośredni paliwa,275,310,1045,820
+AUDI,80,Tarcza hamulcowa,106,131,627,820
+AUDI,80,Sprężyna przednia,222,255,781,900
+AUDI,80,Filtr oleju,80,90,1302,1050
+AUDI,80,Chłodnica,1597,1667,40,30
+AUDI,A7,Wahacz przedni,237,255,284,480
+AUDI,A7,Amortyzator tylni,489,515,264,480
+AUDI,A7,Klocki hamulcowe,67,76,642,640
+AUDI,A7,Maglownica,236,251,243,380
+AUDI,A7,Sprzęgło dwumasowe,418,466,493,350
+AUDI,A7,Wtrysk bezpośredni paliwa,172,193,636,780
+AUDI,A7,Tarcza hamulcowa,154,167,662,760
+AUDI,A7,Sprężyna przednia,121,162,593,550
+AUDI,A7,Filtr oleju,36,48,1251,1600
+AUDI,A7,Chłodnica,1792,1949,38,10
+AUDI,Q5,Wahacz przedni,362,373,367,510
+AUDI,Q5,Amortyzator tylni,301,322,292,660
+AUDI,Q5,Klocki hamulcowe,68,86,510,910
+AUDI,Q5,Maglownica,254,286,270,170
+AUDI,Q5,Sprzęgło dwumasowe,667,700,309,380
+AUDI,Q5,Wtrysk bezpośredni paliwa,126,141,1029,1280
+AUDI,Q5,Tarcza hamulcowa,182,207,523,670
+AUDI,Q5,Sprężyna przednia,104,150,698,580
+AUDI,Q5,Filtr oleju,53,66,1447,1500
+AUDI,Q5,Chłodnica,1531,1696,49,10
+Volksvagen,Golf,Wahacz przedni,470,487,299,430
+Volksvagen,Golf,Amortyzator tylni,368,379,295,570
+Volksvagen,Golf,Klocki hamulcowe,189,205,541,1120
+Volksvagen,Golf,Maglownica,327,344,156,240
+Volksvagen,Golf,Sprzęgło dwumasowe,492,504,317,320
+Volksvagen,Golf,Wtrysk bezpośredni paliwa,179,213,937,1120
+Volksvagen,Golf,Tarcza hamulcowa,127,162,513,790
+Volksvagen,Golf,Sprężyna przednia,212,249,559,620
+Volksvagen,Golf,Filtr oleju,50,63,1377,1030
+Volksvagen,Golf,Chłodnica,1018,1085,23,40
+Volksvagen,Polo,Wahacz przedni,272,286,349,300
+Volksvagen,Polo,Amortyzator tylni,463,470,325,410
+Volksvagen,Polo,Klocki hamulcowe,149,156,681,700
+Volksvagen,Polo,Maglownica,221,263,164,340
+Volksvagen,Polo,Sprzęgło dwumasowe,668,709,458,490
+Volksvagen,Polo,Wtrysk bezpośredni paliwa,202,234,580,730
+Volksvagen,Polo,Tarcza hamulcowa,133,149,546,690
+Volksvagen,Polo,Sprężyna przednia,138,158,743,460
+Volksvagen,Polo,Filtr oleju,37,50,1132,1290
+Volksvagen,Polo,Chłodnica,1874,2071,40,20
+Volksvagen,Arteon,Wahacz przedni,495,516,336,700
+Volksvagen,Arteon,Amortyzator tylni,323,345,323,600
+Volksvagen,Arteon,Klocki hamulcowe,188,205,634,560
+Volksvagen,Arteon,Maglownica,403,441,101,140
+Volksvagen,Arteon,Sprzęgło dwumasowe,539,569,373,400
+Volksvagen,Arteon,Wtrysk bezpośredni paliwa,116,141,440,610
+Volksvagen,Arteon,Tarcza hamulcowa,177,198,713,610
+Volksvagen,Arteon,Sprężyna przednia,119,142,653,700
+Volksvagen,Arteon,Filtr oleju,35,46,1320,1800
+Volksvagen,Arteon,Chłodnica,1992,2115,9,40
+Volksvagen,Passat,Wahacz przedni,214,244,251,260
+Volksvagen,Passat,Amortyzator tylni,321,347,315,760
+Volksvagen,Passat,Klocki hamulcowe,121,134,613,1130
+Volksvagen,Passat,Maglownica,232,251,148,220
+Volksvagen,Passat,Sprzęgło dwumasowe,431,470,430,460
+Volksvagen,Passat,Wtrysk bezpośredni paliwa,283,293,1099,1320
+Volksvagen,Passat,Tarcza hamulcowa,180,197,628,650
+Volksvagen,Passat,Sprężyna przednia,141,166,766,420
+Volksvagen,Passat,Filtr oleju,66,83,1252,1160
+Volksvagen,Passat,Chłodnica,1710,1760,11,10
+Volksvagen,Transporter,Wahacz przedni,262,275,336,370
+Volksvagen,Transporter,Amortyzator tylni,446,454,343,360
+Volksvagen,Transporter,Klocki hamulcowe,183,195,586,580
+Volksvagen,Transporter,Maglownica,207,241,236,140
+Volksvagen,Transporter,Sprzęgło dwumasowe,542,591,239,220
+Volksvagen,Transporter,Wtrysk bezpośredni paliwa,101,129,612,610
+Volksvagen,Transporter,Tarcza hamulcowa,198,209,704,860
+Volksvagen,Transporter,Sprężyna przednia,246,287,776,650
+Volksvagen,Transporter,Filtr oleju,88,100,1182,1970
+Volksvagen,Transporter,Chłodnica,1056,1208,12,20
+Volksvagen,Amarok,Wahacz przedni,476,499,271,670
+Volksvagen,Amarok,Amortyzator tylni,357,386,391,450
+Volksvagen,Amarok,Klocki hamulcowe,163,180,651,840
+Volksvagen,Amarok,Maglownica,346,369,257,300
+Volksvagen,Amarok,Sprzęgło dwumasowe,435,471,361,310
+Volksvagen,Amarok,Wtrysk bezpośredni paliwa,232,254,588,880
+Volksvagen,Amarok,Tarcza hamulcowa,185,209,723,840
+Volksvagen,Amarok,Sprężyna przednia,206,227,729,420
+Volksvagen,Amarok,Filtr oleju,30,36,1194,1950
+Volksvagen,Amarok,Chłodnica,1775,1914,31,30
+Volksvagen,Lupo,Wahacz przedni,337,355,279,400
+Volksvagen,Lupo,Amortyzator tylni,349,382,353,270
+Volksvagen,Lupo,Klocki hamulcowe,124,129,424,700
+Volksvagen,Lupo,Maglownica,460,480,215,150
+Volksvagen,Lupo,Sprzęgło dwumasowe,618,635,279,320
+Volksvagen,Lupo,Wtrysk bezpośredni paliwa,160,182,892,550
+Volksvagen,Lupo,Tarcza hamulcowa,99,122,535,810
+Volksvagen,Lupo,Sprężyna przednia,184,211,524,670
+Volksvagen,Lupo,Filtr oleju,82,102,1306,1060
+Volksvagen,Lupo,Chłodnica,1039,1156,29,40
+Volksvagen,Multivan,Wahacz przedni,381,392,334,470
+Volksvagen,Multivan,Amortyzator tylni,494,525,321,480
+Volksvagen,Multivan,Klocki hamulcowe,149,162,446,860
+Volksvagen,Multivan,Maglownica,310,329,125,260
+Volksvagen,Multivan,Sprzęgło dwumasowe,438,455,231,290
+Volksvagen,Multivan,Wtrysk bezpośredni paliwa,120,138,599,1180
+Volksvagen,Multivan,Tarcza hamulcowa,107,138,701,610
+Volksvagen,Multivan,Sprężyna przednia,168,209,503,460
+Volksvagen,Multivan,Filtr oleju,85,96,1166,1150
+Volksvagen,Multivan,Chłodnica,1048,1171,28,30
+Volksvagen,T-roc,Wahacz przedni,313,343,328,600
+Volksvagen,T-roc,Amortyzator tylni,477,507,282,260
+Volksvagen,T-roc,Klocki hamulcowe,60,73,667,1180
+Volksvagen,T-roc,Maglownica,473,486,153,250
+Volksvagen,T-roc,Sprzęgło dwumasowe,319,365,282,470
+Volksvagen,T-roc,Wtrysk bezpośredni paliwa,290,305,582,1250
+Volksvagen,T-roc,Tarcza hamulcowa,166,195,611,880
+Volksvagen,T-roc,Sprężyna przednia,217,245,695,610
+Volksvagen,T-roc,Filtr oleju,71,80,1467,1840
+Volksvagen,T-roc,Chłodnica,1993,2160,41,40
+Volksvagen,Touareg,Wahacz przedni,394,406,317,780
+Volksvagen,Touareg,Amortyzator tylni,449,477,360,710
+Volksvagen,Touareg,Klocki hamulcowe,97,111,662,600
+Volksvagen,Touareg,Maglownica,460,502,147,300
+Volksvagen,Touareg,Sprzęgło dwumasowe,382,426,265,250
+Volksvagen,Touareg,Wtrysk bezpośredni paliwa,128,140,906,1480
+Volksvagen,Touareg,Tarcza hamulcowa,193,203,692,820
+Volksvagen,Touareg,Sprężyna przednia,84,114,799,420
+Volksvagen,Touareg,Filtr oleju,48,68,1199,1490
+Volksvagen,Touareg,Chłodnica,1484,1541,24,50
+Opel,Astra,Wahacz przedni,214,233,301,640
+Opel,Astra,Amortyzator tylni,405,425,338,390
+Opel,Astra,Klocki hamulcowe,151,165,478,1150
+Opel,Astra,Maglownica,440,486,175,200
+Opel,Astra,Sprzęgło dwumasowe,687,714,395,290
+Opel,Astra,Wtrysk bezpośredni paliwa,134,169,692,770
+Opel,Astra,Tarcza hamulcowa,171,184,616,750
+Opel,Astra,Sprężyna przednia,167,196,764,720
+Opel,Astra,Filtr oleju,31,43,1472,1090
+Opel,Astra,Chłodnica,1306,1461,7,30
+Opel,Omega,Wahacz przedni,442,453,338,730
+Opel,Omega,Amortyzator tylni,470,485,337,460
+Opel,Omega,Klocki hamulcowe,184,203,765,1000
+Opel,Omega,Maglownica,221,268,100,300
+Opel,Omega,Sprzęgło dwumasowe,613,639,238,480
+Opel,Omega,Wtrysk bezpośredni paliwa,120,134,480,650
+Opel,Omega,Tarcza hamulcowa,118,144,778,700
+Opel,Omega,Sprężyna przednia,114,141,791,570
+Opel,Omega,Filtr oleju,62,69,1252,1740
+Opel,Omega,Chłodnica,1871,1941,47,40
+Opel,Corsa,Wahacz przedni,479,509,287,700
+Opel,Corsa,Amortyzator tylni,356,378,306,630
+Opel,Corsa,Klocki hamulcowe,112,121,519,970
+Opel,Corsa,Maglownica,391,441,293,160
+Opel,Corsa,Sprzęgło dwumasowe,310,337,454,360
+Opel,Corsa,Wtrysk bezpośredni paliwa,227,254,911,870
+Opel,Corsa,Tarcza hamulcowa,91,118,666,900
+Opel,Corsa,Sprężyna przednia,90,139,688,440
+Opel,Corsa,Filtr oleju,53,62,1298,1120
+Opel,Corsa,Chłodnica,1903,1992,26,20
+Opel,Mokka,Wahacz przedni,455,472,254,770
+Opel,Mokka,Amortyzator tylni,399,407,269,570
+Opel,Mokka,Klocki hamulcowe,123,134,718,740
+Opel,Mokka,Maglownica,325,347,294,360
+Opel,Mokka,Sprzęgło dwumasowe,522,542,351,400
+Opel,Mokka,Wtrysk bezpośredni paliwa,265,287,597,1200
+Opel,Mokka,Tarcza hamulcowa,193,228,613,680
+Opel,Mokka,Sprężyna przednia,150,165,591,850
+Opel,Mokka,Filtr oleju,35,51,1082,1680
+Opel,Mokka,Chłodnica,1625,1690,30,40
+Opel,Vectra,Wahacz przedni,591,616,400,370
+Opel,Vectra,Amortyzator tylni,380,398,275,550
+Opel,Vectra,Klocki hamulcowe,158,167,624,810
+Opel,Vectra,Maglownica,220,250,290,200
+Opel,Vectra,Sprzęgło dwumasowe,598,634,243,220
+Opel,Vectra,Wtrysk bezpośredni paliwa,188,209,1177,610
+Opel,Vectra,Tarcza hamulcowa,87,110,788,820
+Opel,Vectra,Sprężyna przednia,247,288,762,470
+Opel,Vectra,Filtr oleju,80,92,1404,1550
+Opel,Vectra,Chłodnica,1796,1945,10,30
+Opel,Zafira,Wahacz przedni,225,236,394,500
+Opel,Zafira,Amortyzator tylni,302,334,350,520
+Opel,Zafira,Klocki hamulcowe,72,83,716,1100
+Opel,Zafira,Maglownica,225,235,282,360
+Opel,Zafira,Sprzęgło dwumasowe,417,438,236,220
+Opel,Zafira,Wtrysk bezpośredni paliwa,248,273,578,1010
+Opel,Zafira,Tarcza hamulcowa,141,160,672,890
+Opel,Zafira,Sprężyna przednia,219,235,746,580
+Opel,Zafira,Filtr oleju,47,54,1498,1460
+Opel,Zafira,Chłodnica,1762,1951,43,30
+Opel,Karl,Wahacz przedni,413,426,398,300
+Opel,Karl,Amortyzator tylni,437,450,392,750
+Opel,Karl,Klocki hamulcowe,135,150,547,790
+Opel,Karl,Maglownica,390,428,186,160
+Opel,Karl,Sprzęgło dwumasowe,577,608,219,280
+Opel,Karl,Wtrysk bezpośredni paliwa,278,301,506,630
+Opel,Karl,Tarcza hamulcowa,159,178,713,790
+Opel,Karl,Sprężyna przednia,201,230,715,700
+Opel,Karl,Filtr oleju,88,94,1307,1870
+Opel,Karl,Chłodnica,1926,2081,15,40
+Opel,Calibra,Wahacz przedni,271,297,383,580
+Opel,Calibra,Amortyzator tylni,304,314,317,570
+Opel,Calibra,Klocki hamulcowe,145,153,593,770
+Opel,Calibra,Maglownica,499,517,199,340
+Opel,Calibra,Sprzęgło dwumasowe,435,451,439,490
+Opel,Calibra,Wtrysk bezpośredni paliwa,150,176,649,990
+Opel,Calibra,Tarcza hamulcowa,97,118,618,790
+Opel,Calibra,Sprężyna przednia,143,167,601,430
+Opel,Calibra,Filtr oleju,47,55,1187,1120
+Opel,Calibra,Chłodnica,1431,1555,27,20
+Opel,Insignia,Wahacz przedni,218,233,284,530
+Opel,Insignia,Amortyzator tylni,329,350,309,640
+Opel,Insignia,Klocki hamulcowe,104,120,596,610
+Opel,Insignia,Maglownica,397,408,224,220
+Opel,Insignia,Sprzęgło dwumasowe,622,653,481,310
+Opel,Insignia,Wtrysk bezpośredni paliwa,186,205,1098,700
+Opel,Insignia,Tarcza hamulcowa,101,113,673,760
+Opel,Insignia,Sprężyna przednia,198,242,619,860
+Opel,Insignia,Filtr oleju,82,92,1479,1620
+Opel,Insignia,Chłodnica,1016,1200,50,50
+Opel,Meriva,Wahacz przedni,433,459,332,250
+Opel,Meriva,Amortyzator tylni,409,418,340,270
+Opel,Meriva,Klocki hamulcowe,154,169,769,810
+Opel,Meriva,Maglownica,405,420,221,290
+Opel,Meriva,Sprzęgło dwumasowe,359,388,334,500
+Opel,Meriva,Wtrysk bezpośredni paliwa,101,118,460,690
+Opel,Meriva,Tarcza hamulcowa,139,152,667,640
+Opel,Meriva,Sprężyna przednia,100,129,754,720
+Opel,Meriva,Filtr oleju,75,89,1228,2000
+Opel,Meriva,Chłodnica,1165,1325,50,10
+Skoda,Fabia,Wahacz przedni,572,588,279,510
+Skoda,Fabia,Amortyzator tylni,430,456,383,570
+Skoda,Fabia,Klocki hamulcowe,86,93,557,850
+Skoda,Fabia,Maglownica,310,334,292,290
+Skoda,Fabia,Sprzęgło dwumasowe,335,348,236,270
+Skoda,Fabia,Wtrysk bezpośredni paliwa,175,205,1138,950
+Skoda,Fabia,Tarcza hamulcowa,200,212,682,770
+Skoda,Fabia,Sprężyna przednia,121,160,530,490
+Skoda,Fabia,Filtr oleju,30,40,1440,1950
+Skoda,Fabia,Chłodnica,1173,1334,38,50
+Skoda,Kodiaq,Wahacz przedni,247,262,283,260
+Skoda,Kodiaq,Amortyzator tylni,378,392,398,390
+Skoda,Kodiaq,Klocki hamulcowe,199,218,435,970
+Skoda,Kodiaq,Maglownica,309,342,124,260
+Skoda,Kodiaq,Sprzęgło dwumasowe,347,393,201,280
+Skoda,Kodiaq,Wtrysk bezpośredni paliwa,208,223,468,540
+Skoda,Kodiaq,Tarcza hamulcowa,85,107,768,640
+Skoda,Kodiaq,Sprężyna przednia,207,250,514,750
+Skoda,Kodiaq,Filtr oleju,55,60,1354,1140
+Skoda,Kodiaq,Chłodnica,1419,1495,29,10
+Skoda,Kamiq,Wahacz przedni,290,302,399,320
+Skoda,Kamiq,Amortyzator tylni,353,363,266,320
+Skoda,Kamiq,Klocki hamulcowe,193,202,691,640
+Skoda,Kamiq,Maglownica,425,470,145,350
+Skoda,Kamiq,Sprzęgło dwumasowe,416,451,320,210
+Skoda,Kamiq,Wtrysk bezpośredni paliwa,102,114,986,840
+Skoda,Kamiq,Tarcza hamulcowa,174,195,789,750
+Skoda,Kamiq,Sprężyna przednia,124,149,537,590
+Skoda,Kamiq,Filtr oleju,57,70,1296,1330
+Skoda,Kamiq,Chłodnica,1085,1161,15,20
+Skoda,Octavia,Wahacz przedni,511,535,297,590
+Skoda,Octavia,Amortyzator tylni,307,324,307,660
+Skoda,Octavia,Klocki hamulcowe,145,164,453,930
+Skoda,Octavia,Maglownica,426,459,243,370
+Skoda,Octavia,Sprzęgło dwumasowe,504,542,497,290
+Skoda,Octavia,Wtrysk bezpośredni paliwa,163,185,498,720
+Skoda,Octavia,Tarcza hamulcowa,111,130,616,830
+Skoda,Octavia,Sprężyna przednia,106,118,706,860
+Skoda,Octavia,Filtr oleju,80,86,1332,1670
+Skoda,Octavia,Chłodnica,1072,1270,33,20
+Skoda,Superb,Wahacz przedni,558,574,337,670
+Skoda,Superb,Amortyzator tylni,386,408,263,580
+Skoda,Superb,Klocki hamulcowe,139,146,444,830
+Skoda,Superb,Maglownica,319,349,193,140
+Skoda,Superb,Sprzęgło dwumasowe,515,525,386,460
+Skoda,Superb,Wtrysk bezpośredni paliwa,279,296,658,1100
+Skoda,Superb,Tarcza hamulcowa,78,93,556,840
+Skoda,Superb,Sprężyna przednia,79,89,687,470
+Skoda,Superb,Filtr oleju,59,77,1236,1230
+Skoda,Superb,Chłodnica,1972,2159,49,50
+Skoda,Scala,Wahacz przedni,244,267,272,470
+Skoda,Scala,Amortyzator tylni,321,346,290,700
+Skoda,Scala,Klocki hamulcowe,120,128,542,660
+Skoda,Scala,Maglownica,323,351,232,400
+Skoda,Scala,Sprzęgło dwumasowe,551,569,293,420
+Skoda,Scala,Wtrysk bezpośredni paliwa,196,219,681,1240
+Skoda,Scala,Tarcza hamulcowa,118,128,542,840
+Skoda,Scala,Sprężyna przednia,121,136,710,460
+Skoda,Scala,Filtr oleju,35,42,1262,1230
+Skoda,Scala,Chłodnica,1308,1432,50,20
+Skoda,Citigo,Wahacz przedni,270,300,298,340
+Skoda,Citigo,Amortyzator tylni,346,364,261,640
+Skoda,Citigo,Klocki hamulcowe,126,145,629,690
+Skoda,Citigo,Maglownica,448,488,135,240
+Skoda,Citigo,Sprzęgło dwumasowe,393,415,369,240
+Skoda,Citigo,Wtrysk bezpośredni paliwa,249,276,799,660
+Skoda,Citigo,Tarcza hamulcowa,98,119,720,610
+Skoda,Citigo,Sprężyna przednia,203,251,550,870
+Skoda,Citigo,Filtr oleju,68,74,1226,2000
+Skoda,Citigo,Chłodnica,1859,2038,16,50
+Skoda,Felicia,Wahacz przedni,234,260,375,330
+Skoda,Felicia,Amortyzator tylni,444,461,315,790
+Skoda,Felicia,Klocki hamulcowe,188,203,489,890
+Skoda,Felicia,Maglownica,479,525,256,330
+Skoda,Felicia,Sprzęgło dwumasowe,682,709,434,260
+Skoda,Felicia,Wtrysk bezpośredni paliwa,170,197,566,930
+Skoda,Felicia,Tarcza hamulcowa,82,115,623,800
+Skoda,Felicia,Sprężyna przednia,183,211,553,760
+Skoda,Felicia,Filtr oleju,45,55,1211,1280
+Skoda,Felicia,Chłodnica,1667,1859,49,40
+Skoda,Roomster,Wahacz przedni,306,317,272,650
+Skoda,Roomster,Amortyzator tylni,461,473,346,670
+Skoda,Roomster,Klocki hamulcowe,129,139,611,750
+Skoda,Roomster,Maglownica,393,424,227,300
+Skoda,Roomster,Sprzęgło dwumasowe,594,632,356,250
+Skoda,Roomster,Wtrysk bezpośredni paliwa,242,261,877,1250
+Skoda,Roomster,Tarcza hamulcowa,174,202,582,640
+Skoda,Roomster,Sprężyna przednia,214,231,609,730
+Skoda,Roomster,Filtr oleju,43,55,1343,1330
+Skoda,Roomster,Chłodnica,1392,1463,15,50
+Skoda,Yeti,Wahacz przedni,597,625,272,260
+Skoda,Yeti,Amortyzator tylni,309,327,354,430
+Skoda,Yeti,Klocki hamulcowe,83,98,737,1150
+Skoda,Yeti,Maglownica,469,497,177,250
+Skoda,Yeti,Sprzęgło dwumasowe,303,328,272,250
+Skoda,Yeti,Wtrysk bezpośredni paliwa,169,184,919,600
+Skoda,Yeti,Tarcza hamulcowa,82,109,760,760
+Skoda,Yeti,Sprężyna przednia,241,251,556,810
+Skoda,Yeti,Filtr oleju,66,77,1002,2000
+Skoda,Yeti,Chłodnica,1166,1306,21,30
+Mazda,2,Wahacz przedni,501,516,308,500
+Mazda,2,Amortyzator tylni,387,420,304,590
+Mazda,2,Klocki hamulcowe,172,180,496,690
+Mazda,2,Maglownica,380,395,292,310
+Mazda,2,Sprzęgło dwumasowe,481,521,353,210
+Mazda,2,Wtrysk bezpośredni paliwa,220,230,421,1240
+Mazda,2,Tarcza hamulcowa,188,202,710,660
+Mazda,2,Sprężyna przednia,174,188,535,490
+Mazda,2,Filtr oleju,48,62,1333,1790
+Mazda,2,Chłodnica,1137,1313,37,40
+Mazda,MX5,Wahacz przedni,306,331,390,330
+Mazda,MX5,Amortyzator tylni,304,321,292,480
+Mazda,MX5,Klocki hamulcowe,103,110,535,1000
+Mazda,MX5,Maglownica,309,331,190,260
+Mazda,MX5,Sprzęgło dwumasowe,386,427,252,380
+Mazda,MX5,Wtrysk bezpośredni paliwa,136,150,1146,1050
+Mazda,MX5,Tarcza hamulcowa,131,161,508,850
+Mazda,MX5,Sprężyna przednia,195,240,679,540
+Mazda,MX5,Filtr oleju,51,57,1000,1910
+Mazda,MX5,Chłodnica,1033,1127,13,30
+Mazda,RX8,Wahacz przedni,435,446,363,640
+Mazda,RX8,Amortyzator tylni,474,489,395,430
+Mazda,RX8,Klocki hamulcowe,62,79,400,1010
+Mazda,RX8,Maglownica,417,453,183,270
+Mazda,RX8,Sprzęgło dwumasowe,329,346,377,240
+Mazda,RX8,Wtrysk bezpośredni paliwa,221,244,521,1500
+Mazda,RX8,Tarcza hamulcowa,152,181,604,880
+Mazda,RX8,Sprężyna przednia,193,224,617,670
+Mazda,RX8,Filtr oleju,69,84,1058,1870
+Mazda,RX8,Chłodnica,1219,1314,48,40
+Mazda,CX5,Wahacz przedni,462,488,296,730
+Mazda,CX5,Amortyzator tylni,415,441,268,460
+Mazda,CX5,Klocki hamulcowe,148,158,648,840
+Mazda,CX5,Maglownica,344,363,201,380
+Mazda,CX5,Sprzęgło dwumasowe,631,656,395,290
+Mazda,CX5,Wtrysk bezpośredni paliwa,288,308,694,730
+Mazda,CX5,Tarcza hamulcowa,108,143,676,820
+Mazda,CX5,Sprężyna przednia,214,234,657,850
+Mazda,CX5,Filtr oleju,36,52,1487,1350
+Mazda,CX5,Chłodnica,1029,1146,21,40
+Mazda,3,Wahacz przedni,417,439,357,450
+Mazda,3,Amortyzator tylni,366,372,347,410
+Mazda,3,Klocki hamulcowe,170,180,467,1170
+Mazda,3,Maglownica,415,429,197,350
+Mazda,3,Sprzęgło dwumasowe,497,537,479,480
+Mazda,3,Wtrysk bezpośredni paliwa,295,319,751,1110
+Mazda,3,Tarcza hamulcowa,151,186,508,660
+Mazda,3,Sprężyna przednia,246,268,504,760
+Mazda,3,Filtr oleju,59,78,1048,1110
+Mazda,3,Chłodnica,1266,1419,30,10
+Mazda,CX30,Wahacz przedni,226,249,364,380
+Mazda,CX30,Amortyzator tylni,400,423,292,610
+Mazda,CX30,Klocki hamulcowe,145,157,743,1160
+Mazda,CX30,Maglownica,218,228,124,350
+Mazda,CX30,Sprzęgło dwumasowe,421,445,314,280
+Mazda,CX30,Wtrysk bezpośredni paliwa,147,159,629,1340
+Mazda,CX30,Tarcza hamulcowa,122,152,789,850
+Mazda,CX30,Sprężyna przednia,212,223,632,770
+Mazda,CX30,Filtr oleju,33,42,1224,1020
+Mazda,CX30,Chłodnica,1308,1413,45,30
+Mazda,Tribute,Wahacz przedni,229,252,360,690
+Mazda,Tribute,Amortyzator tylni,476,487,330,520
+Mazda,Tribute,Klocki hamulcowe,127,142,525,990
+Mazda,Tribute,Maglownica,285,303,170,160
+Mazda,Tribute,Sprzęgło dwumasowe,683,721,382,240
+Mazda,Tribute,Wtrysk bezpośredni paliwa,169,195,728,1290
+Mazda,Tribute,Tarcza hamulcowa,190,211,506,870
+Mazda,Tribute,Sprężyna przednia,172,200,713,540
+Mazda,Tribute,Filtr oleju,81,97,1390,1220
+Mazda,Tribute,Chłodnica,1802,1941,20,40
+Mazda,6,Wahacz przedni,588,599,313,670
+Mazda,6,Amortyzator tylni,493,511,291,710
+Mazda,6,Klocki hamulcowe,189,197,698,720
+Mazda,6,Maglownica,241,273,239,260
+Mazda,6,Sprzęgło dwumasowe,371,411,346,500
+Mazda,6,Wtrysk bezpośredni paliwa,252,283,435,1260
+Mazda,6,Tarcza hamulcowa,160,177,529,890
+Mazda,6,Sprężyna przednia,119,169,708,700
+Mazda,6,Filtr oleju,79,85,1416,1350
+Mazda,6,Chłodnica,1480,1580,38,20
+Mazda,RX7,Wahacz przedni,448,476,313,290
+Mazda,RX7,Amortyzator tylni,321,354,291,380
+Mazda,RX7,Klocki hamulcowe,183,201,564,870
+Mazda,RX7,Maglownica,287,309,275,180
+Mazda,RX7,Sprzęgło dwumasowe,530,577,239,420
+Mazda,RX7,Wtrysk bezpośredni paliwa,275,296,905,1320
+Mazda,RX7,Tarcza hamulcowa,168,184,792,700
+Mazda,RX7,Sprężyna przednia,218,234,620,700
+Mazda,RX7,Filtr oleju,58,72,1110,1430
+Mazda,RX7,Chłodnica,1653,1806,35,10
+Mazda,CX7,Wahacz przedni,548,578,311,680
+Mazda,CX7,Amortyzator tylni,430,465,291,400
+Mazda,CX7,Klocki hamulcowe,113,119,558,750
+Mazda,CX7,Maglownica,478,523,262,400
+Mazda,CX7,Sprzęgło dwumasowe,502,532,257,270
+Mazda,CX7,Wtrysk bezpośredni paliwa,144,163,422,1370
+Mazda,CX7,Tarcza hamulcowa,142,174,738,650
+Mazda,CX7,Sprężyna przednia,189,219,796,720
+Mazda,CX7,Filtr oleju,49,67,1174,1900
+Mazda,CX7,Chłodnica,1868,1927,18,10
+Toyota,Auris,Wahacz przedni,228,256,335,560
+Toyota,Auris,Amortyzator tylni,425,457,256,500
+Toyota,Auris,Klocki hamulcowe,135,149,785,530
+Toyota,Auris,Maglownica,374,385,205,270
+Toyota,Auris,Sprzęgło dwumasowe,356,403,458,420
+Toyota,Auris,Wtrysk bezpośredni paliwa,224,236,1100,1060
+Toyota,Auris,Tarcza hamulcowa,177,198,506,850
+Toyota,Auris,Sprężyna przednia,91,106,758,410
+Toyota,Auris,Filtr oleju,79,92,1161,1380
+Toyota,Auris,Chłodnica,1450,1588,8,20
+Toyota,Corolla,Wahacz przedni,472,485,333,520
+Toyota,Corolla,Amortyzator tylni,442,477,348,530
+Toyota,Corolla,Klocki hamulcowe,89,103,498,1100
+Toyota,Corolla,Maglownica,266,276,206,290
+Toyota,Corolla,Sprzęgło dwumasowe,502,543,308,370
+Toyota,Corolla,Wtrysk bezpośredni paliwa,189,212,793,760
+Toyota,Corolla,Tarcza hamulcowa,120,134,638,670
+Toyota,Corolla,Sprężyna przednia,189,202,600,670
+Toyota,Corolla,Filtr oleju,78,98,1172,1910
+Toyota,Corolla,Chłodnica,1919,2076,9,30
+Toyota,Camry,Wahacz przedni,241,259,341,630
+Toyota,Camry,Amortyzator tylni,386,420,265,350
+Toyota,Camry,Klocki hamulcowe,55,60,569,670
+Toyota,Camry,Maglownica,397,418,204,380
+Toyota,Camry,Sprzęgło dwumasowe,553,600,264,320
+Toyota,Camry,Wtrysk bezpośredni paliwa,200,226,893,1430
+Toyota,Camry,Tarcza hamulcowa,116,133,542,840
+Toyota,Camry,Sprężyna przednia,141,168,516,740
+Toyota,Camry,Filtr oleju,47,54,1407,1790
+Toyota,Camry,Chłodnica,1022,1214,23,50
+Toyota,Highlander,Wahacz przedni,361,389,363,530
+Toyota,Highlander,Amortyzator tylni,326,358,290,360
+Toyota,Highlander,Klocki hamulcowe,195,211,729,700
+Toyota,Highlander,Maglownica,496,512,126,210
+Toyota,Highlander,Sprzęgło dwumasowe,674,692,272,290
+Toyota,Highlander,Wtrysk bezpośredni paliwa,125,156,818,1000
+Toyota,Highlander,Tarcza hamulcowa,113,124,588,890
+Toyota,Highlander,Sprężyna przednia,118,143,568,430
+Toyota,Highlander,Filtr oleju,90,103,1424,1420
+Toyota,Highlander,Chłodnica,1433,1561,26,40
+Toyota,Prius,Wahacz przedni,450,465,354,720
+Toyota,Prius,Amortyzator tylni,303,318,280,300
+Toyota,Prius,Klocki hamulcowe,68,80,433,870
+Toyota,Prius,Maglownica,444,467,108,330
+Toyota,Prius,Sprzęgło dwumasowe,437,472,411,500
+Toyota,Prius,Wtrysk bezpośredni paliwa,269,304,585,1190
+Toyota,Prius,Tarcza hamulcowa,104,132,735,840
+Toyota,Prius,Sprężyna przednia,130,178,703,610
+Toyota,Prius,Filtr oleju,70,76,1403,1380
+Toyota,Prius,Chłodnica,1310,1378,28,40
+Toyota,RAV4,Wahacz przedni,403,416,352,760
+Toyota,RAV4,Amortyzator tylni,380,412,328,670
+Toyota,RAV4,Klocki hamulcowe,129,136,690,990
+Toyota,RAV4,Maglownica,422,466,261,340
+Toyota,RAV4,Sprzęgło dwumasowe,657,689,287,440
+Toyota,RAV4,Wtrysk bezpośredni paliwa,260,271,890,590
+Toyota,RAV4,Tarcza hamulcowa,139,167,540,870
+Toyota,RAV4,Sprężyna przednia,174,190,759,650
+Toyota,RAV4,Filtr oleju,59,75,1104,1450
+Toyota,RAV4,Chłodnica,1519,1680,21,40
+Toyota,Yaris,Wahacz przedni,293,315,390,600
+Toyota,Yaris,Amortyzator tylni,315,349,313,330
+Toyota,Yaris,Klocki hamulcowe,153,167,730,940
+Toyota,Yaris,Maglownica,485,511,216,130
+Toyota,Yaris,Sprzęgło dwumasowe,654,681,276,270
+Toyota,Yaris,Wtrysk bezpośredni paliwa,219,232,901,710
+Toyota,Yaris,Tarcza hamulcowa,144,173,645,760
+Toyota,Yaris,Sprężyna przednia,104,135,520,440
+Toyota,Yaris,Filtr oleju,34,52,1472,1890
+Toyota,Yaris,Chłodnica,1460,1624,38,30
+Toyota,Verso,Wahacz przedni,548,567,305,420
+Toyota,Verso,Amortyzator tylni,361,393,321,660
+Toyota,Verso,Klocki hamulcowe,175,183,574,670
+Toyota,Verso,Maglownica,329,352,217,130
+Toyota,Verso,Sprzęgło dwumasowe,555,587,242,230
+Toyota,Verso,Wtrysk bezpośredni paliwa,285,314,455,820
+Toyota,Verso,Tarcza hamulcowa,144,159,609,750
+Toyota,Verso,Sprężyna przednia,168,208,783,900
+Toyota,Verso,Filtr oleju,34,41,1036,1410
+Toyota,Verso,Chłodnica,1191,1367,5,30
+Toyota,Hilux,Wahacz przedni,238,261,375,370
+Toyota,Hilux,Amortyzator tylni,447,454,351,410
+Toyota,Hilux,Klocki hamulcowe,82,89,710,1070
+Toyota,Hilux,Maglownica,476,506,171,180
+Toyota,Hilux,Sprzęgło dwumasowe,566,586,259,400
+Toyota,Hilux,Wtrysk bezpośredni paliwa,156,189,797,1490
+Toyota,Hilux,Tarcza hamulcowa,109,135,784,720
+Toyota,Hilux,Sprężyna przednia,118,143,557,560
+Toyota,Hilux,Filtr oleju,32,45,1307,1320
+Toyota,Hilux,Chłodnica,1897,2033,42,50
+Toyota,Avensis,Wahacz przedni,574,599,301,550
+Toyota,Avensis,Amortyzator tylni,336,370,283,350
+Toyota,Avensis,Klocki hamulcowe,177,183,693,570
+Toyota,Avensis,Maglownica,396,406,119,100
+Toyota,Avensis,Sprzęgło dwumasowe,695,731,260,340
+Toyota,Avensis,Wtrysk bezpośredni paliwa,102,136,426,710
+Toyota,Avensis,Tarcza hamulcowa,178,201,555,610
+Toyota,Avensis,Sprężyna przednia,192,205,800,450
+Toyota,Avensis,Filtr oleju,33,43,1308,1970
+Toyota,Avensis,Chłodnica,1114,1300,17,40
+Fiat,Panda,Wahacz przedni,211,230,267,280
+Fiat,Panda,Amortyzator tylni,390,410,324,310
+Fiat,Panda,Klocki hamulcowe,172,179,796,1170
+Fiat,Panda,Maglownica,314,327,151,260
+Fiat,Panda,Sprzęgło dwumasowe,520,546,415,440
+Fiat,Panda,Wtrysk bezpośredni paliwa,158,171,515,870
+Fiat,Panda,Tarcza hamulcowa,92,104,643,850
+Fiat,Panda,Sprężyna przednia,121,154,588,440
+Fiat,Panda,Filtr oleju,76,91,1034,1770
+Fiat,Panda,Chłodnica,1532,1704,33,30
+Fiat,Punto,Wahacz przedni,210,235,335,450
+Fiat,Punto,Amortyzator tylni,335,346,308,330
+Fiat,Punto,Klocki hamulcowe,154,162,695,850
+Fiat,Punto,Maglownica,326,369,206,330
+Fiat,Punto,Sprzęgło dwumasowe,461,487,284,440
+Fiat,Punto,Wtrysk bezpośredni paliwa,217,233,1130,1390
+Fiat,Punto,Tarcza hamulcowa,159,191,658,630
+Fiat,Punto,Sprężyna przednia,207,237,795,670
+Fiat,Punto,Filtr oleju,85,97,1109,1320
+Fiat,Punto,Chłodnica,1304,1442,20,10
+Fiat,Tipo,Wahacz przedni,565,582,330,750
+Fiat,Tipo,Amortyzator tylni,348,354,358,510
+Fiat,Tipo,Klocki hamulcowe,56,64,679,1130
+Fiat,Tipo,Maglownica,457,492,282,150
+Fiat,Tipo,Sprzęgło dwumasowe,537,575,225,420
+Fiat,Tipo,Wtrysk bezpośredni paliwa,160,194,828,890
+Fiat,Tipo,Tarcza hamulcowa,190,216,621,830
+Fiat,Tipo,Sprężyna przednia,97,147,705,790
+Fiat,Tipo,Filtr oleju,32,40,1241,2000
+Fiat,Tipo,Chłodnica,1693,1890,18,10
+Fiat,500,Wahacz przedni,327,343,347,500
+Fiat,500,Amortyzator tylni,301,331,353,750
+Fiat,500,Klocki hamulcowe,100,114,616,820
+Fiat,500,Maglownica,269,281,127,310
+Fiat,500,Sprzęgło dwumasowe,640,665,495,390
+Fiat,500,Wtrysk bezpośredni paliwa,102,132,1103,970
+Fiat,500,Tarcza hamulcowa,198,220,700,610
+Fiat,500,Sprężyna przednia,186,216,767,730
+Fiat,500,Filtr oleju,90,106,1143,1220
+Fiat,500,Chłodnica,1484,1617,21,30
+Fiat,Bravo,Wahacz przedni,503,527,400,470
+Fiat,Bravo,Amortyzator tylni,376,388,332,470
+Fiat,Bravo,Klocki hamulcowe,161,180,602,660
+Fiat,Bravo,Maglownica,294,310,186,160
+Fiat,Bravo,Sprzęgło dwumasowe,554,572,314,480
+Fiat,Bravo,Wtrysk bezpośredni paliwa,171,198,640,1100
+Fiat,Bravo,Tarcza hamulcowa,176,201,562,890
+Fiat,Bravo,Sprężyna przednia,229,271,609,690
+Fiat,Bravo,Filtr oleju,70,81,1119,1330
+Fiat,Bravo,Chłodnica,1043,1106,34,50
+Fiat,Cinquecento,Wahacz przedni,239,263,382,450
+Fiat,Cinquecento,Amortyzator tylni,319,325,351,750
+Fiat,Cinquecento,Klocki hamulcowe,93,110,543,1010
+Fiat,Cinquecento,Maglownica,445,479,216,240
+Fiat,Cinquecento,Sprzęgło dwumasowe,609,659,256,280
+Fiat,Cinquecento,Wtrysk bezpośredni paliwa,198,233,764,1300
+Fiat,Cinquecento,Tarcza hamulcowa,172,190,593,640
+Fiat,Cinquecento,Sprężyna przednia,78,121,516,580
+Fiat,Cinquecento,Filtr oleju,66,82,1467,1990
+Fiat,Cinquecento,Chłodnica,1422,1592,26,40
+Fiat,Multipla,Wahacz przedni,559,570,373,550
+Fiat,Multipla,Amortyzator tylni,391,418,328,770
+Fiat,Multipla,Klocki hamulcowe,134,142,502,440
+Fiat,Multipla,Maglownica,366,401,249,330
+Fiat,Multipla,Sprzęgło dwumasowe,534,550,390,500
+Fiat,Multipla,Wtrysk bezpośredni paliwa,282,311,804,1040
+Fiat,Multipla,Tarcza hamulcowa,136,152,700,670
+Fiat,Multipla,Sprężyna przednia,90,128,591,870
+Fiat,Multipla,Filtr oleju,47,61,1345,1710
+Fiat,Multipla,Chłodnica,1514,1589,45,40
+Fiat,Stilo,Wahacz przedni,341,353,386,730
+Fiat,Stilo,Amortyzator tylni,349,380,252,320
+Fiat,Stilo,Klocki hamulcowe,69,81,800,570
+Fiat,Stilo,Maglownica,432,476,235,270
+Fiat,Stilo,Sprzęgło dwumasowe,419,445,268,410
+Fiat,Stilo,Wtrysk bezpośredni paliwa,295,324,681,730
+Fiat,Stilo,Tarcza hamulcowa,105,137,684,830
+Fiat,Stilo,Sprężyna przednia,105,116,563,820
+Fiat,Stilo,Filtr oleju,79,96,1323,1010
+Fiat,Stilo,Chłodnica,1797,1884,19,20
+Fiat,Seicento,Wahacz przedni,512,529,289,430
+Fiat,Seicento,Amortyzator tylni,425,437,291,290
+Fiat,Seicento,Klocki hamulcowe,133,142,757,460
+Fiat,Seicento,Maglownica,353,385,220,280
+Fiat,Seicento,Sprzęgło dwumasowe,656,694,367,220
+Fiat,Seicento,Wtrysk bezpośredni paliwa,296,306,638,1240
+Fiat,Seicento,Tarcza hamulcowa,85,99,589,820
+Fiat,Seicento,Sprężyna przednia,108,154,747,560
+Fiat,Seicento,Filtr oleju,66,81,1333,1250
+Fiat,Seicento,Chłodnica,1234,1354,30,40
+Fiat,Ducato,Wahacz przedni,435,447,340,550
+Fiat,Ducato,Amortyzator tylni,479,487,264,320
+Fiat,Ducato,Klocki hamulcowe,195,215,450,890
+Fiat,Ducato,Maglownica,286,329,162,350
+Fiat,Ducato,Sprzęgło dwumasowe,680,702,411,440
+Fiat,Ducato,Wtrysk bezpośredni paliwa,179,205,726,690
+Fiat,Ducato,Tarcza hamulcowa,198,209,500,620
+Fiat,Ducato,Sprężyna przednia,117,149,672,460
+Fiat,Ducato,Filtr oleju,73,80,1397,1490
+Fiat,Ducato,Chłodnica,1045,1213,42,50
+Alfa Romeo,Gulia,Wahacz przedni,523,539,398,730
+Alfa Romeo,Gulia,Amortyzator tylni,467,474,309,750
+Alfa Romeo,Gulia,Klocki hamulcowe,152,161,693,570
+Alfa Romeo,Gulia,Maglownica,228,245,149,310
+Alfa Romeo,Gulia,Sprzęgło dwumasowe,507,524,242,440
+Alfa Romeo,Gulia,Wtrysk bezpośredni paliwa,236,258,401,850
+Alfa Romeo,Gulia,Tarcza hamulcowa,114,127,696,840
+Alfa Romeo,Gulia,Sprężyna przednia,154,193,763,720
+Alfa Romeo,Gulia,Filtr oleju,40,46,1446,1650
+Alfa Romeo,Gulia,Chłodnica,1548,1737,17,50
+Alfa Romeo,Gulietta,Wahacz przedni,224,251,367,800
+Alfa Romeo,Gulietta,Amortyzator tylni,353,387,330,400
+Alfa Romeo,Gulietta,Klocki hamulcowe,104,117,628,600
+Alfa Romeo,Gulietta,Maglownica,276,303,114,230
+Alfa Romeo,Gulietta,Sprzęgło dwumasowe,545,580,486,230
+Alfa Romeo,Gulietta,Wtrysk bezpośredni paliwa,177,206,1156,1000
+Alfa Romeo,Gulietta,Tarcza hamulcowa,107,131,578,750
+Alfa Romeo,Gulietta,Sprężyna przednia,108,125,784,550
+Alfa Romeo,Gulietta,Filtr oleju,69,81,1067,1800
+Alfa Romeo,Gulietta,Chłodnica,1190,1277,14,30
+Alfa Romeo,Brera,Wahacz przedni,396,410,250,530
+Alfa Romeo,Brera,Amortyzator tylni,307,337,261,710
+Alfa Romeo,Brera,Klocki hamulcowe,72,84,442,1150
+Alfa Romeo,Brera,Maglownica,239,262,125,120
+Alfa Romeo,Brera,Sprzęgło dwumasowe,448,459,304,290
+Alfa Romeo,Brera,Wtrysk bezpośredni paliwa,220,231,1046,1330
+Alfa Romeo,Brera,Tarcza hamulcowa,114,142,774,740
+Alfa Romeo,Brera,Sprężyna przednia,190,208,517,660
+Alfa Romeo,Brera,Filtr oleju,70,85,1101,1940
+Alfa Romeo,Brera,Chłodnica,1456,1547,33,40
+Alfa Romeo,Mito,Wahacz przedni,318,342,279,600
+Alfa Romeo,Mito,Amortyzator tylni,346,353,357,530
+Alfa Romeo,Mito,Klocki hamulcowe,113,129,542,690
+Alfa Romeo,Mito,Maglownica,330,368,192,350
+Alfa Romeo,Mito,Sprzęgło dwumasowe,527,552,323,380
+Alfa Romeo,Mito,Wtrysk bezpośredni paliwa,203,219,1075,780
+Alfa Romeo,Mito,Tarcza hamulcowa,79,107,666,890
+Alfa Romeo,Mito,Sprężyna przednia,196,242,608,530
+Alfa Romeo,Mito,Filtr oleju,47,59,1496,1550
+Alfa Romeo,Mito,Chłodnica,1881,2066,29,20
+Alfa Romeo,Tonale,Wahacz przedni,580,592,268,420
+Alfa Romeo,Tonale,Amortyzator tylni,463,468,289,580
+Alfa Romeo,Tonale,Klocki hamulcowe,94,100,448,700
+Alfa Romeo,Tonale,Maglownica,443,470,112,400
+Alfa Romeo,Tonale,Sprzęgło dwumasowe,511,522,215,260
+Alfa Romeo,Tonale,Wtrysk bezpośredni paliwa,274,292,1190,1380
+Alfa Romeo,Tonale,Tarcza hamulcowa,149,167,577,840
+Alfa Romeo,Tonale,Sprężyna przednia,242,289,718,870
+Alfa Romeo,Tonale,Filtr oleju,47,62,1096,1070
+Alfa Romeo,Tonale,Chłodnica,1246,1389,22,20
+Alfa Romeo,145,Wahacz przedni,503,514,361,510
+Alfa Romeo,145,Amortyzator tylni,316,335,343,440
+Alfa Romeo,145,Klocki hamulcowe,152,169,695,770
+Alfa Romeo,145,Maglownica,401,444,247,130
+Alfa Romeo,145,Sprzęgło dwumasowe,565,575,470,370
+Alfa Romeo,145,Wtrysk bezpośredni paliwa,164,192,726,1360
+Alfa Romeo,145,Tarcza hamulcowa,128,149,616,750
+Alfa Romeo,145,Sprężyna przednia,186,228,733,510
+Alfa Romeo,145,Filtr oleju,36,51,1425,2000
+Alfa Romeo,145,Chłodnica,1724,1855,35,50
+Alfa Romeo,159,Wahacz przedni,369,397,362,290
+Alfa Romeo,159,Amortyzator tylni,352,383,348,470
+Alfa Romeo,159,Klocki hamulcowe,92,101,677,1080
+Alfa Romeo,159,Maglownica,330,355,151,210
+Alfa Romeo,159,Sprzęgło dwumasowe,403,418,267,450
+Alfa Romeo,159,Wtrysk bezpośredni paliwa,179,208,789,900
+Alfa Romeo,159,Tarcza hamulcowa,176,196,576,740
+Alfa Romeo,159,Sprężyna przednia,131,153,515,540
+Alfa Romeo,159,Filtr oleju,89,109,1245,1800
+Alfa Romeo,159,Chłodnica,1639,1761,23,10
+Alfa Romeo,GT,Wahacz przedni,266,286,354,300
+Alfa Romeo,GT,Amortyzator tylni,364,383,265,800
+Alfa Romeo,GT,Klocki hamulcowe,142,157,710,550
+Alfa Romeo,GT,Maglownica,464,507,110,280
+Alfa Romeo,GT,Sprzęgło dwumasowe,504,526,201,290
+Alfa Romeo,GT,Wtrysk bezpośredni paliwa,185,208,735,670
+Alfa Romeo,GT,Tarcza hamulcowa,189,205,698,610
+Alfa Romeo,GT,Sprężyna przednia,212,235,576,870
+Alfa Romeo,GT,Filtr oleju,58,78,1267,1990
+Alfa Romeo,GT,Chłodnica,1521,1720,15,30
+Alfa Romeo,Spider,Wahacz przedni,226,251,373,290
+Alfa Romeo,Spider,Amortyzator tylni,437,447,259,520
+Alfa Romeo,Spider,Klocki hamulcowe,126,139,648,820
+Alfa Romeo,Spider,Maglownica,285,303,261,360
+Alfa Romeo,Spider,Sprzęgło dwumasowe,698,745,212,490
+Alfa Romeo,Spider,Wtrysk bezpośredni paliwa,154,174,1016,550
+Alfa Romeo,Spider,Tarcza hamulcowa,120,154,571,780
+Alfa Romeo,Spider,Sprężyna przednia,164,177,697,840
+Alfa Romeo,Spider,Filtr oleju,56,74,1181,1060
+Alfa Romeo,Spider,Chłodnica,1505,1567,6,20
+Alfa Romeo,Stelvio,Wahacz przedni,483,497,272,640
+Alfa Romeo,Stelvio,Amortyzator tylni,354,367,280,610
+Alfa Romeo,Stelvio,Klocki hamulcowe,121,131,545,690
+Alfa Romeo,Stelvio,Maglownica,252,301,115,220
+Alfa Romeo,Stelvio,Sprzęgło dwumasowe,616,646,269,320
+Alfa Romeo,Stelvio,Wtrysk bezpośredni paliwa,242,265,1070,1450
+Alfa Romeo,Stelvio,Tarcza hamulcowa,147,175,785,810
+Alfa Romeo,Stelvio,Sprężyna przednia,189,199,573,510
+Alfa Romeo,Stelvio,Filtr oleju,70,80,1472,1820
+Alfa Romeo,Stelvio,Chłodnica,1202,1283,31,40
+Chevrolet,Camaro,Wahacz przedni,494,515,347,650
+Chevrolet,Camaro,Amortyzator tylni,390,412,368,350
+Chevrolet,Camaro,Klocki hamulcowe,80,97,664,1090
+Chevrolet,Camaro,Maglownica,251,290,193,200
+Chevrolet,Camaro,Sprzęgło dwumasowe,605,650,268,450
+Chevrolet,Camaro,Wtrysk bezpośredni paliwa,173,187,462,830
+Chevrolet,Camaro,Tarcza hamulcowa,113,143,598,640
+Chevrolet,Camaro,Sprężyna przednia,212,262,555,590
+Chevrolet,Camaro,Filtr oleju,69,79,1391,1760
+Chevrolet,Camaro,Chłodnica,1100,1175,13,50
+Chevrolet,Aveo,Wahacz przedni,506,534,295,320
+Chevrolet,Aveo,Amortyzator tylni,382,410,298,700
+Chevrolet,Aveo,Klocki hamulcowe,175,192,702,550
+Chevrolet,Aveo,Maglownica,355,371,125,130
+Chevrolet,Aveo,Sprzęgło dwumasowe,397,417,380,250
+Chevrolet,Aveo,Wtrysk bezpośredni paliwa,249,271,593,1340
+Chevrolet,Aveo,Tarcza hamulcowa,197,210,585,700
+Chevrolet,Aveo,Sprężyna przednia,222,269,781,480
+Chevrolet,Aveo,Filtr oleju,47,56,1275,1120
+Chevrolet,Aveo,Chłodnica,1085,1208,21,30
+Chevrolet,Captiva,Wahacz przedni,536,550,259,280
+Chevrolet,Captiva,Amortyzator tylni,386,403,262,730
+Chevrolet,Captiva,Klocki hamulcowe,177,194,793,420
+Chevrolet,Captiva,Maglownica,362,411,158,160
+Chevrolet,Captiva,Sprzęgło dwumasowe,577,625,354,330
+Chevrolet,Captiva,Wtrysk bezpośredni paliwa,111,121,896,1460
+Chevrolet,Captiva,Tarcza hamulcowa,77,112,587,820
+Chevrolet,Captiva,Sprężyna przednia,153,190,630,880
+Chevrolet,Captiva,Filtr oleju,88,98,1173,1590
+Chevrolet,Captiva,Chłodnica,1798,1926,8,50
+Chevrolet,Cruze,Wahacz przedni,386,409,315,300
+Chevrolet,Cruze,Amortyzator tylni,423,441,368,330
+Chevrolet,Cruze,Klocki hamulcowe,57,76,699,1090
+Chevrolet,Cruze,Maglownica,279,323,252,370
+Chevrolet,Cruze,Sprzęgło dwumasowe,312,328,420,490
+Chevrolet,Cruze,Wtrysk bezpośredni paliwa,251,262,803,620
+Chevrolet,Cruze,Tarcza hamulcowa,171,192,611,650
+Chevrolet,Cruze,Sprężyna przednia,247,293,533,670
+Chevrolet,Cruze,Filtr oleju,60,78,1274,1440
+Chevrolet,Cruze,Chłodnica,1591,1659,39,10
+Chevrolet,Impala,Wahacz przedni,464,484,383,690
+Chevrolet,Impala,Amortyzator tylni,377,383,282,630
+Chevrolet,Impala,Klocki hamulcowe,152,170,567,890
+Chevrolet,Impala,Maglownica,244,272,102,130
+Chevrolet,Impala,Sprzęgło dwumasowe,434,451,341,250
+Chevrolet,Impala,Wtrysk bezpośredni paliwa,138,158,985,1430
+Chevrolet,Impala,Tarcza hamulcowa,102,127,750,890
+Chevrolet,Impala,Sprężyna przednia,238,284,664,800
+Chevrolet,Impala,Filtr oleju,38,55,1368,1890
+Chevrolet,Impala,Chłodnica,1487,1610,9,40
+Chevrolet,Lacetti,Wahacz przedni,396,406,250,540
+Chevrolet,Lacetti,Amortyzator tylni,410,426,380,740
+Chevrolet,Lacetti,Klocki hamulcowe,133,141,678,600
+Chevrolet,Lacetti,Maglownica,283,311,295,240
+Chevrolet,Lacetti,Sprzęgło dwumasowe,460,496,245,360
+Chevrolet,Lacetti,Wtrysk bezpośredni paliwa,278,311,491,640
+Chevrolet,Lacetti,Tarcza hamulcowa,194,207,542,650
+Chevrolet,Lacetti,Sprężyna przednia,233,244,652,690
+Chevrolet,Lacetti,Filtr oleju,63,75,1270,1070
+Chevrolet,Lacetti,Chłodnica,1669,1866,18,10
+Chevrolet,Orlando,Wahacz przedni,474,485,323,790
+Chevrolet,Orlando,Amortyzator tylni,333,367,299,790
+Chevrolet,Orlando,Klocki hamulcowe,108,124,465,1170
+Chevrolet,Orlando,Maglownica,455,489,138,330
+Chevrolet,Orlando,Sprzęgło dwumasowe,461,496,303,410
+Chevrolet,Orlando,Wtrysk bezpośredni paliwa,258,291,1035,1440
+Chevrolet,Orlando,Tarcza hamulcowa,76,111,611,750
+Chevrolet,Orlando,Sprężyna przednia,117,128,620,670
+Chevrolet,Orlando,Filtr oleju,43,61,1229,1260
+Chevrolet,Orlando,Chłodnica,1189,1352,18,30
+Chevrolet,Spark,Wahacz przedni,212,234,390,700
+Chevrolet,Spark,Amortyzator tylni,357,385,306,590
+Chevrolet,Spark,Klocki hamulcowe,76,83,555,990
+Chevrolet,Spark,Maglownica,376,419,144,250
+Chevrolet,Spark,Sprzęgło dwumasowe,510,542,449,310
+Chevrolet,Spark,Wtrysk bezpośredni paliwa,282,300,618,1110
+Chevrolet,Spark,Tarcza hamulcowa,118,132,545,710
+Chevrolet,Spark,Sprężyna przednia,211,223,685,440
+Chevrolet,Spark,Filtr oleju,62,81,1062,1870
+Chevrolet,Spark,Chłodnica,1034,1106,7,50
+Chevrolet,Tahoe,Wahacz przedni,448,465,326,670
+Chevrolet,Tahoe,Amortyzator tylni,485,520,266,390
+Chevrolet,Tahoe,Klocki hamulcowe,130,138,536,530
+Chevrolet,Tahoe,Maglownica,349,392,264,210
+Chevrolet,Tahoe,Sprzęgło dwumasowe,521,549,452,500
+Chevrolet,Tahoe,Wtrysk bezpośredni paliwa,163,176,793,1220
+Chevrolet,Tahoe,Tarcza hamulcowa,120,145,648,900
+Chevrolet,Tahoe,Sprężyna przednia,172,192,671,650
+Chevrolet,Tahoe,Filtr oleju,74,86,1340,1600
+Chevrolet,Tahoe,Chłodnica,1906,1992,45,30
+Chevrolet,Corvette,Wahacz przedni,528,547,358,260
+Chevrolet,Corvette,Amortyzator tylni,424,442,380,520
+Chevrolet,Corvette,Klocki hamulcowe,120,131,693,1170
+Chevrolet,Corvette,Maglownica,253,273,119,360
+Chevrolet,Corvette,Sprzęgło dwumasowe,504,549,335,430
+Chevrolet,Corvette,Wtrysk bezpośredni paliwa,174,184,528,670
+Chevrolet,Corvette,Tarcza hamulcowa,168,197,770,890
+Chevrolet,Corvette,Sprężyna przednia,234,258,689,470
+Chevrolet,Corvette,Filtr oleju,79,92,1318,1510
+Chevrolet,Corvette,Chłodnica,1731,1919,11,40
