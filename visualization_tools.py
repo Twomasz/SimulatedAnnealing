@@ -41,9 +41,9 @@ def plot_algorithm(way_of_algorithm, best_point, iteration_list):
 def plot_temperature_and_iterations(temperature_list, iteration_list):
     ages = range(1, len(temperature_list)+1)
 
-    plt.figure(figsize=(12, 5))
+    plt.figure(figsize=(12, 3))
     plt.subplot(1, 2, 1)
-    plt.plot(ages, temperature_list, '-p', color='blue')
+    plt.plot(ages, temperature_list, '-p', color='gray', mfc='blue', mec='blue', markersize=10)
     plt.title('Wartość temperatury w kolejnych epokach')
     plt.xlabel('Epoki')
     plt.ylabel('Wartość temperatury')
@@ -51,7 +51,7 @@ def plot_temperature_and_iterations(temperature_list, iteration_list):
     plt.grid()
 
     plt.subplot(1, 2, 2)
-    plt.plot(ages, iteration_list, '-p', color='orange')
+    plt.plot(ages, iteration_list, '-p', color='gray', mfc='orange', mec='orange', markersize=10)
     plt.title('Liczba iteracji w kolejnych epokach')
     plt.xlabel('Epoki')
     plt.ylabel('Liczba iteracji')
