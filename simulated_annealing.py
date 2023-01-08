@@ -138,6 +138,4 @@ def SimulatedAnnealing(company: Company, stored_items: List[Item], temp_array: l
 
             way_of_algorithm.append(S.profit)
 
-    final_result = way_of_algorithm[-1]
-
-    return final_result, best_result_point, chosen_items, way_of_algorithm
+    return best_result_point, chosen_items, way_of_algorithm

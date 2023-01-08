@@ -59,3 +59,58 @@ def plot_temperature_and_iterations(temperature_list, iteration_list):
     plt.grid()
 
     plt.show()
+
+
+def plot_temps_versions(arithmetic_function: list, geometric_function: list):
+    plt.figure(figsize=(12, 3))
+    ages = range(1, len(arithmetic_function)+1)
+    plt.subplot(1, 2, 1)
+    plt.plot(ages, arithmetic_function, '-p', color='gray', mfc='blue', mec='blue', markersize=10)
+    plt.title('Liniowy spadek temperatury')
+    plt.ylabel('Wartość temperatury')
+    plt.xlabel('Epoki')
+    plt.xticks(ages)
+    plt.grid()
+
+    ages = range(1, len(geometric_function)+1)
+    plt.subplot(1, 2, 2)
+    plt.plot(ages, geometric_function, '-p', color='gray', mfc='orange', mec='orange', markersize=10)
+    plt.title('Nieliniowy spadek temperatury')
+    plt.ylabel('Wartość temperatury')
+    plt.xlabel('Epoki')
+    plt.xticks(ages)
+    plt.grid()
+
+    plt.show()
+
+
+def plot_iters_versions(constant_function: list, linear_function: list, square_function: list):
+    plt.figure(figsize=(12, 3))
+    ages = range(1, len(constant_function) + 1)
+    plt.subplot(1, 3, 1)
+    plt.plot(ages, constant_function, '-p', color='gray', mfc='green', mec='green', markersize=10)
+    plt.title('Stała liczba iteracji')
+    plt.ylabel('Wartość temperatury')
+    plt.xlabel('Epoki')
+    plt.xticks(ages)
+    plt.grid()
+
+    ages = range(1, len(linear_function)+1)
+    plt.subplot(1, 3, 2)
+    plt.plot(ages, linear_function, '-p', color='gray', mfc='blue', mec='blue', markersize=10)
+    plt.title('Liniowy wzrost iteracji')
+    plt.ylabel('Wartość temperatury')
+    plt.xlabel('Epoki')
+    plt.xticks(ages)
+    plt.grid()
+
+    ages = range(1, len(square_function)+1)
+    plt.subplot(1, 3, 3)
+    plt.plot(ages, square_function, '-p', color='gray', mfc='orange', mec='orange', markersize=10)
+    plt.title('Kwadratowy wzrost iteracji')
+    plt.ylabel('Wartość temperatury')
+    plt.xlabel('Epoki')
+    plt.xticks(ages)
+    plt.grid()
+
+    plt.show()
