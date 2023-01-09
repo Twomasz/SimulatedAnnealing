@@ -254,7 +254,7 @@ class Solution:
             # wprowadzeniu swojej ilości elementów
             for idx, item in enumerate(self.stored_items):
                 if idx not in new_solution:
-                    up_limit = self.company.budget // (2 * self.stored_items[idx].price)
+                    up_limit = self.company.budget // self.stored_items[idx].price
                     item.quantity = random.randint(1, up_limit)
 
             self.company.update_margins_from_warehouse(self.stored_items)  # UPDATE!
