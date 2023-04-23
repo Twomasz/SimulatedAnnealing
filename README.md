@@ -7,7 +7,7 @@ The algorithm has been tested for various hyperparameters such as:
 * size of tested case.
 
 ## Short reminder
-**Simulated Annealing** is a heuristic optimization algorithm that is used to find the global minimum of a complex function. <br />
+**Simulated Annealing** is a heuristic optimization algorithm that is used to find the global minimum/maximum of a complex function. <br />
 The method is based on the concept of annealing, which is a process of slowly cooling a material to obtain a desired crystal structure.
 
 ## Problem description 
